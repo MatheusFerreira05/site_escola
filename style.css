@@ -1,0 +1,122 @@
+:root{
+    --cor1: #344E5C;
+    --cor2: #608FA8;
+    --cor3: #667075;
+    --cor4: #92A1A8;
+    --cor5: #8CD0F5;
+    --cor6: #AD060E;
+
+    --fonte_principal:'Montserrat', sans-serif;
+    --font_titulo:'Open Sans', sans-serif;
+    --fonte_titulo2:'Roboto', sans-serif;
+}
+
+header{
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+nav{
+    padding-left: 100px;
+    display: inline-block;
+}
+
+nav a{
+    margin: 7px;
+    padding: 7px;
+    text-decoration: none;
+    color: var(--cor2);
+    font-family: var(--font_titulo);
+    font-size: 15px;
+}
+
+nav a:hover{
+    color: #AD060E;
+}
+
+nav a.ativo{
+    color: var(--cor6);
+}
+
+main{
+    padding-top: 30px;
+    background-color: white;
+}
+
+.carrossel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.carrossel .fotos{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.carrossel .fotos img{
+    width: 19.9%;
+}
+
+@keyframes animacao{
+    0%{margin-left: 0;}
+    20% {margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+
+
+
+.card{
+    width: 200px;
+    height: 350px;
+    margin: auto;
+    font-family: arial;
+    background-color: whitesmoke;
+    float: left;
+    margin: 30px;
+}
+
+.card:hover{
+    box-shadow: 1.5px 1.5px #CCC;
+    transition: 0.5s;
+}
+
+.card img{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   padding-top: 20px;
+}
+
+.card h2{
+    text-align: center;
+    color: var(--cor2);
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card h2:hover{
+    color: var(--cor6);
+}
+
+.galeria{
+    padding-top: 250px;
+}
+
+.galeria img{
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+}
