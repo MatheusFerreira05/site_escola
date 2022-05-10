@@ -46,7 +46,7 @@ main{
 
 .carrossel{
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
     padding-bottom: 50px;
 }
@@ -73,16 +73,29 @@ main{
     100%{margin-left: -400%;}
 }
 
+.cursos{
+    padding-top: 100px;
+    padding-bottom: 75px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+}
 
+.cursos h1{
+    text-align: center;
+    color: #344E5C;
+    font-size: 40px;
+    font-family: var(--fonte_principal);
+}
 
 .card{
     width: 200px;
-    height: 350px;
+    height: 250px;
     margin: auto;
     font-family: arial;
     background-color: whitesmoke;
     float: left;
     margin: 30px;
+    
 }
 
 .card:hover{
@@ -95,7 +108,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-   padding-top: 20px;
+    padding-top: 20px;
 }
 
 .card h2{
@@ -112,11 +125,81 @@ main{
 }
 
 .galeria{
-    padding-top: 250px;
+    text-align: center;
 }
 
 .galeria img{
     height: 200px;
-    width: 200px;
+    width: 300px;
     padding: 50px;
+}
+
+.parallax {
+    background-image: url("imagens/escola01.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    background-color: #608FA8;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+}
+
+.rodape h2{
+    color: #3a3d3e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.rodape p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3a3d3e;
+}
+
+.rodape img{
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+}
+
+.contatos{
+    width: 150px;
+    height: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.endereco{
+    margin: 20px;
+    width: 150px;
+    height: 120px;
+    text-align: center
+}
+
+.redes{
+    margin: 20px;
+    width: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 120px;
+    text-align: center;
+}
+
+address{
+    margin-top: 75px;
+    text-align: center;
+}
+
+address  p{
+    font-family: var(--fonte_titulo2);
+    color: #3a3d3e;
 }
