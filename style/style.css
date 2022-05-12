@@ -1,0 +1,370 @@
+*  {
+	margin: 0;
+	padding: 0;
+}
+:root{
+    --cor1: #344E5C;
+    --cor2: #608FA8;
+    --cor3: #667075;
+    --cor4: #92A1A8;
+    --cor5: #8CD0F5;
+    --cor6: #AD060E;
+
+    --fonte_principal:'Montserrat', sans-serif;
+    --font_titulo:'Open Sans', sans-serif;
+    --fonte_titulo2:'Roboto', sans-serif;
+}
+
+
+/*Area do menu*/
+
+#area-cabecalho {
+
+	padding: 18px;
+	text-align: center;
+	background: darkred;
+
+}
+
+
+#area-logo, #area-menu {
+	padding: 10px;
+    text-align: center;
+}
+
+#area-menu {
+	background: whitesmoke;
+	display: inline-block;
+    border-radius: 0.4em;
+}
+ 
+
+/* Formatação do menu*/
+
+  a {
+      text-decoration: none;
+
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+	text-indent: -3000px;
+    
+    
+
+}
+
+#area-cabecalho ,a:link ,a:visited {
+	color: darkred;
+	padding: 8px  12px;
+	font-size: 22px;
+	
+}
+
+
+#area-cabecalho a:hover {
+	color:whitesmoke;
+	background: darkred;
+	text-decoration: none;
+    border-radius: 0.4em;
+	
+}
+
+#area-menu ul{
+    list-style-type: none;
+    
+}
+
+#area-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+#area-menu ul li a{
+    color: darkred;
+    display: inline;
+}
+
+#area-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+#area-menu ul li:hover ul{
+    display: block;
+}
+
+#area-menu ul ul{
+    width: 200px;
+}
+
+#area-menu ul ul li a{
+    display: block;
+}
+
+
+
+/*fim formatação do menu*/
+
+/*Formatação conteúdo principal*/
+main{
+    background-color: #fff;
+}
+
+/* início carroussel */ 
+.carroussel{
+    background-color: white;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.js .carroussel{
+    overflow: hidden;
+    color: white;
+}
+
+.js .carroussel .fotos{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 1024px;
+}
+
+.js .carroussel figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.js .carroussel figure.show{
+    opacity: 1;
+    position: static;
+}
+
+.js .carroussel .prev, .js .carroussel .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .carroussel .prev{
+    left: 10px;
+}
+
+.js .carroussel .next{
+    right: 10px;
+}
+
+.fotos{
+    white-space: nowrap;
+}
+
+.carroussel figure{
+    display: inline-block;
+}
+
+/* fim carroussel */ 
+
+
+/*Início dos cards*/
+
+
+.card a {
+       color: darkred;
+       border: 1px solid darkred;
+       display: block;
+       border-radius: 0.25em;
+       
+       
+}
+
+.card a:hover {
+      color: white;
+      background-color: darkred;
+      transition: 0.7s ease all;
+      cursor: pointer;
+}
+.cursos{
+    padding-top: 10px;
+    padding-bottom: 75px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 83px;
+    padding-right: 40px;
+    border: 1px solid red;
+}
+
+.cursos h1{
+    text-align: center;
+    color: darkred;
+    font-size: 60px;
+    font-family: var(--fonte_principal);
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    font-family: arial;
+    background-color: whitesmoke;
+    border: 1.5px solid rgb(230, 227, 227);
+    float: left;
+    margin: 30px;
+    text-align: center;
+    
+    
+}
+
+.card:hover{
+    box-shadow: 0 0 0.7em rgb(153, 152, 152);
+    transition: 0.5s;
+}
+
+.card img{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-radius: 0.6em;
+    
+}
+
+.card h2{
+    margin-top: 30px;
+    text-align: center;
+    color: darkred;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card h2:hover{
+    color: var(--cor6);
+}
+
+.link-card{
+    margin-top: 18px;
+    padding: 8px;
+}
+
+/*Fim dos cards*/
+
+
+/*Início da Galeria*/
+.parallax {
+    background-image: url(../imagens/escola01.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax .direita .cima{
+    height: 250px;
+    width: 400px;
+}
+
+.parallax .direita .baixo{
+    height: 150px;
+    width: 200px;
+}
+
+.parallax .central{
+    height: 250px;
+    width: 150px;
+}
+
+.parallax .direita-2{
+    height: 150px;
+    width: 250px;
+    float: right;
+    padding-right: 20px;
+}
+
+/*Fim da Galeria*/
+
+/*Início do rodapé*/
+footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #8b0000;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    
+    height: 200px;
+}
+
+#rodape h2{
+    color: #fff;
+    font-family: 'Roboto',arial, sans-serif;
+    font-size: 20px;
+}
+
+#rodape p{
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D94141;
+    font-size: 15px;
+}
+
+#rodape img{
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+}
+
+#rodape h3{
+    color: #344E5C;
+    padding: 0px 20px ;
+}
+
+.secretaria, .biblioteca,.endereco,.redes{
+    padding-left: 120px;
+}
+
+.biblioteca h3{
+    text-align: center;
+}
+
+.endereco{
+    width: 150px;;
+    height: 120px;
+}
+
+.redes{
+    padding-top: 25px;
+    width: 150px;
+    height: 120px;
+}
+
+address{
+    margin-top: 15px;
+    height: 50px;
+    text-align: center;
+    background-color: darkred;
+}
+
+address p{
+    padding-top: 15px;
+    font-family: var(--fonte_titulo2);
+    color: whitesmoke;
+}
+
+/*Fim do rodapé*/
