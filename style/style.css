@@ -19,16 +19,15 @@
 /*Area do menu*/
 
 #area-cabecalho {
-
-	padding: 18px;
+    height: 240px;
+	padding: 10px;
 	text-align: center;
 	background: darkred;
-
 }
 
 
 #area-logo, #area-menu {
-	padding: 10px;
+	padding: 5px;
     text-align: center;
 }
 
@@ -51,16 +50,12 @@
     height: 66px;
     background: url(../imagens/logo.png) no-repeat center;
 	text-indent: -3000px;
-    
-    
-
 }
 
 #area-cabecalho ,a:link ,a:visited {
 	color: darkred;
-	padding: 8px  12px;
+	padding: 4px  12px;
 	font-size: 22px;
-	
 }
 
 
@@ -69,12 +64,10 @@
 	background: darkred;
 	text-decoration: none;
     border-radius: 0.4em;
-	
 }
 
 #area-menu ul{
     list-style-type: none;
-    
 }
 
 #area-menu ul li{
@@ -82,15 +75,11 @@
     position: relative;
 }
 
-#area-menu ul li a{
-    color: darkred;
-    display: inline;
-}
-
 #area-menu ul ul{
     display: none;
     position: absolute;
     left: 0;
+    padding-top: 10px;
 }
 
 #area-menu ul li:hover ul{
@@ -103,21 +92,28 @@
 
 #area-menu ul ul li a{
     display: block;
+    color: rgb(255, 255, 255);
+    background-color: #D94141;
+    font-size: 20px;
 }
 
-
+#area-menu ul ul li a:hover{
+    background-color: rgb(158, 36, 36);
+    border-radius: 0;
+}
 
 /*fim formatação do menu*/
 
 /*Formatação conteúdo principal*/
 main{
     background-color: #fff;
+    padding-bottom: 40px;
 }
 
 /* início carroussel */ 
 .carroussel{
     background-color: white;
-    padding: 125px 0 100px;
+    padding: 0px 0 100px;
     width: 100%;
     overflow: auto;
 }
@@ -182,8 +178,7 @@ main{
        border: 1px solid darkred;
        display: block;
        border-radius: 0.25em;
-       
-       
+       font-size: 18px;
 }
 
 .card a:hover {
@@ -192,6 +187,7 @@ main{
       transition: 0.7s ease all;
       cursor: pointer;
 }
+
 .cursos{
     padding-top: 10px;
     padding-bottom: 75px;
@@ -210,17 +206,15 @@ main{
 }
 
 .card{
-    width: 200px;
+    width: 15%;
     height: 250px;
     margin: auto;
     font-family: arial;
     background-color: whitesmoke;
     border: 1.5px solid rgb(230, 227, 227);
     float: left;
-    margin: 30px;
-    text-align: center;
-    
-    
+    text-align: center; 
+    margin: 25px;
 }
 
 .card:hover{
@@ -235,7 +229,6 @@ main{
     margin-right: auto;
     padding-top: 20px;
     border-radius: 0.6em;
-    
 }
 
 .card h2{
@@ -261,45 +254,106 @@ main{
 
 /*Fim dos cards*/
 
+/*Início da formatação das páginas dos cursos*/
 
+#area-banner-curso {
+        height: 200px;
+        text-align: center;
+        background-image: url(../cursos/imagens/banner-info.jpg);
+        background-size: cover;
+        background-position-y: -50vh;
+        opacity: 90%;
+        
+        
+}
+
+ #area-banner-curso h1 {
+       color: white;
+       padding-top: 70px;
+       opacity: 100%;
+       font-size: 4em;
+       text-transform: uppercase;
+       -webkit-text-stroke-width: 2px;
+       -moz-text-stroke-width: 2px;
+       -webkit-text-stroke-color: rgb(4, 91, 141);
+       -moz-text-stroke-color: rgb(4, 91, 141);
+
+}
+
+#area-conteudo-curso {
+    padding-top: 10px;
+    padding-bottom: 75px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 83px;
+    padding-right: 40px;
+    border: 1px solid red;
+      
+}
+
+ .card-curso {
+    width: 25%;
+    height: 400px;
+    margin: auto;
+    font-family: arial;
+    background-color: rgb(5, 119, 185);
+    border: 1.5px solid rgb(230, 227, 227);
+    float: left;
+    text-align: center; 
+    margin: 25px;
+ }
+
+ #area-conteudo-curso h2 {
+     color: rgb(240, 236, 236);
+     padding-top: 25px;
+     
+
+ }
+    
+#area-conteudo-curso p {
+    color:white;
+    padding-top: 20px;
+}
+
+#area-conteudo-curso img {
+    height: 200px;
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+
+/*Fim da formatação das páginas dos cursos*/
 /*Início da Galeria*/
+
+
 .parallax {
     background-image: url(../imagens/escola01.jpg);
-    height: 100%;
+    height: 390px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-.parallax .direita .cima{
-    height: 250px;
-    width: 400px;
-}
-
-.parallax .direita .baixo{
+.parallax img{
+    width: 15%;
     height: 150px;
-    width: 200px;
+    padding: 20px;
 }
 
-.parallax .central{
-    height: 250px;
-    width: 150px;
-}
-
-.parallax .direita-2{
-    height: 150px;
-    width: 250px;
-    float: right;
-    padding-right: 20px;
+.imagem-baixo{
+    width: 20%;
+    display: inline-block;
+    margin-left:90px;
 }
 
 /*Fim da Galeria*/
 
 /*Início do rodapé*/
 footer{
-    margin-top: 20px;
     width: 100%;
     background-color: #8b0000;
 }
@@ -307,7 +361,6 @@ footer{
 #rodape{
     display: flex;
     align-items: center;
-    
     height: 200px;
 }
 
@@ -320,7 +373,7 @@ footer{
 #rodape p{
     padding-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #D94141;
+    color: #f4d8d8;
     font-size: 15px;
 }
 
@@ -335,7 +388,7 @@ footer{
     padding: 0px 20px ;
 }
 
-.secretaria, .biblioteca,.endereco,.redes{
+.secretaria, .biblioteca,.endereco, .redes{
     padding-left: 120px;
 }
 
@@ -368,3 +421,79 @@ address p{
 }
 
 /*Fim do rodapé*/
+
+/*Início formatação área história*/
+
+main{
+    background-color: gainsboro;
+    width: 100%;
+    height: 1500px;
+}
+
+.conteudo-principal-historia{
+    background-color: rgb(249, 249, 240);
+    float: right;
+    margin-right: 20%;
+    margin-top: 20px;
+    width: 700px;
+}
+
+.conteudo-principal-historia h1{
+    font-family: var(--fonte-titulo);
+    color: brown;
+    padding: 10px;
+    text-align: center;
+}
+
+.conteudo-principal-historia p{
+    font-family: var(--fonte-principal);
+    padding: 20px;
+}
+
+.conteudo-principal-historia p a{
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    padding: 0px;
+}
+
+.conteudo-principal-historia p a:hover{
+    text-decoration: underline;
+
+}
+
+.menu-lateral-historia{
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.menu-lateral-historia ul{
+    list-style-type: none;
+}
+
+.menu-lateral-historia ul li{
+    background-color: brown;
+    padding: 7px;
+}
+
+.menu-lateral-historia a{
+    font-size: 20px;
+    color: azure;
+}
+
+.menu-lateral-historia a:hover{
+    background-color: darkred;
+}
+
+.imagens-historia{
+    float: right;
+    margin-top: 20px;
+    padding-left: 45px;
+}
+
+.imagens-historia img{
+    padding: 20px;
+    height: 150px;
+    width: 250px;
+}
+/*fim formatação área história
