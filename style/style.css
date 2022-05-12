@@ -19,10 +19,10 @@
 /*Area do menu*/
 
 #area-cabecalho {
-    height: 240px;
+    height: 100px;
 	padding: 10px;
 	text-align: center;
-	background: darkred;
+	background: rgb(116, 2, 2);
 }
 
 
@@ -32,9 +32,14 @@
 }
 
 #area-menu {
-	background: whitesmoke;
+	background: rgb(253, 251, 251);
 	display: inline-block;
+    height: 25px;
     border-radius: 0.4em;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    margin-right: 40px;
 }
  
 
@@ -46,9 +51,9 @@
 }
 
 .logo {
-    width: 152px;
-    height: 66px;
-    background: url(../imagens/logo.png) no-repeat center;
+    width: 402px;
+    height: 80px;
+    background: url(../imagens/logo-menu.png) no-repeat center;
 	text-indent: -3000px;
 }
 
@@ -83,7 +88,7 @@
 }
 
 #area-menu ul li:hover ul{
-    display: block;
+    display: inline-block;
 }
 
 #area-menu ul ul{
@@ -100,7 +105,17 @@
 #area-menu ul ul li a:hover{
     background-color: rgb(158, 36, 36);
     border-radius: 0;
+    
 }
+
+.icone {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    
+}
+
+
 
 /*fim formatação do menu*/
 
@@ -113,7 +128,7 @@ main{
 /* início carroussel */ 
 .carroussel{
     background-color: white;
-    padding: 0px 0 100px;
+    padding: 120px 0 100px;
     width: 100%;
     overflow: auto;
 }
@@ -257,21 +272,20 @@ main{
 /*Início da formatação das páginas dos cursos*/
 
 #area-banner-curso {
-        height: 200px;
+        height: 220px;
         text-align: center;
         background-image: url(../cursos/imagens/banner-info.jpg);
         background-size: cover;
         background-position-y: -50vh;
         opacity: 90%;
-        
-        
 }
+
 
  #area-banner-curso h1 {
        color: white;
-       padding-top: 70px;
+       padding-top: 62px;
        opacity: 100%;
-       font-size: 4em;
+       font-size: 5em;
        text-transform: uppercase;
        -webkit-text-stroke-width: 2px;
        -moz-text-stroke-width: 2px;
@@ -283,17 +297,17 @@ main{
 #area-conteudo-curso {
     padding-top: 10px;
     padding-bottom: 75px;
-    height: 450px;
+    height: 1100px;
     background-color: rgb(255, 255, 255);
     padding-left: 83px;
     padding-right: 40px;
-    border: 1px solid red;
+    
       
 }
 
  .card-curso {
     width: 25%;
-    height: 400px;
+    height: 450px;
     margin: auto;
     font-family: arial;
     background-color: rgb(5, 119, 185);
@@ -301,29 +315,59 @@ main{
     float: left;
     text-align: center; 
     margin: 25px;
+    z-index:1;
  }
+
+ .card-curso2 {
+    width: 25%;
+    height: 530px;
+    margin: auto;
+    font-family: arial;
+    background-color: rgb(5, 119, 185);
+    border: 1.5px solid rgb(230, 227, 227);
+    float: left;
+    text-align: center; 
+    margin: 25px;
+    z-index: 2;
+ }
+
 
  #area-conteudo-curso h2 {
      color: rgb(240, 236, 236);
      padding-top: 25px;
-     
-
  }
     
 #area-conteudo-curso p {
     color:white;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
-#area-conteudo-curso img {
+.card-curso-img {
     height: 200px;
     width: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
+.card-curso-img2 {
+    height: 200px;
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.card-curso-img3 {
+    height: 160px;
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
 
 /*Fim da formatação das páginas dos cursos*/
 /*Início da Galeria*/
@@ -355,7 +399,7 @@ main{
 /*Início do rodapé*/
 footer{
     width: 100%;
-    background-color: #8b0000;
+    background-color: rgb(116, 2, 2);
 }
 
 #rodape{
@@ -411,7 +455,7 @@ address{
     margin-top: 15px;
     height: 50px;
     text-align: center;
-    background-color: darkred;
+    background-color: rgb(116, 2, 2);
 }
 
 address p{
@@ -497,3 +541,87 @@ main{
     width: 250px;
 }
 /*fim formatação área história
+
+início da fomatação página professores*/
+
+main{
+    margin-bottom: 200px;
+}
+
+.conteudo-pricipal-membros{
+    padding-top: 10px;
+    padding-bottom: 75px;
+    height: 1700px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 83px;
+    padding-right: 40px;
+    border: 1px solid red;
+}
+
+.conteudo-pricipal-membros h1{
+    font-family: var(--font_titulo);
+    text-align: center;
+    color: brown;
+    padding-top: 20px;
+}
+
+.conteudo-pricipal-membros h2{
+    margin-top: 60px;
+    font-family: var(--fonte_titulo2);
+    text-align: center;
+    color: rgb(103, 47, 47);
+}
+
+.card-membros{
+    width: 20%;
+    height: 300px;
+    background-color: #CCC;
+    margin: 30px;
+    float: left;
+}
+
+.card-membros p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(46, 45, 44);
+}
+
+  .card-membros img{
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .card-membros:hover {
+    box-shadow: 0 0 0.7em rgb(153, 152, 152);
+    transition: 0.5s;
+  }
+
+  .card a{
+    text-decoration: none;
+}
+
+.card h2:hover{
+    color: var(--cor6);
+}
+
+.link-card-membros p{
+    border: 1px solid darkred;
+    font-size: 20px;
+    color: darkred;
+    border-radius: 0.25em;
+    margin-top: 20px;
+    padding: 7px;
+}
+
+.link-card-membros p:hover{
+    background-color: darkred;
+    color: #CCC;
+    transition: 00.5s;
+}
+
+.imagens-membros{
+    height: 150px;
+    width: 300px;
+}

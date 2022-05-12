@@ -4,10 +4,14 @@
     --fonte_titulo2:'Roboto', sans-serif;
 }
 
+main{
+    margin-bottom: 200px;
+}
+
 .conteudo-pricipal-membros{
     padding-top: 10px;
     padding-bottom: 75px;
-    height: 2000px;
+    height: 1700px;
     background-color: rgb(255, 255, 255);
     padding-left: 83px;
     padding-right: 40px;
@@ -52,3 +56,31 @@
     box-shadow: 0 0 0.7em rgb(153, 152, 152);
     transition: 0.5s;
   }
+
+  .card a{
+    text-decoration: none;
+}
+
+.card h2:hover{
+    color: var(--cor6);
+}
+
+.link-card-membros p{
+    border: 1px solid darkred;
+    font-size: 20px;
+    color: darkred;
+    border-radius: 0.25em;
+    margin-top: 20px;
+    padding: 7px;
+}
+
+.link-card-membros p:hover{
+    background-color: darkred;
+    color: #CCC;
+    transition: 00.5s;
+}
+
+.imagens-membros{
+    height: 150px;
+    width: 300px;
+}
