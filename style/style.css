@@ -93,6 +93,7 @@
 
 #area-menu ul ul{
     width: 200px;
+    margin: 20px;
 }
 
 #area-menu ul ul li a{
@@ -105,15 +106,16 @@
 #area-menu ul ul li a:hover{
     background-color: rgb(158, 36, 36);
     border-radius: 0;
-    
 }
 
 .icone {
     width: 12px;
     height: 12px;
     margin-left: 6px;
-    
 }
+
+
+
 
 
 
@@ -233,17 +235,16 @@ main{
 }
 
 .card:hover{
-    box-shadow: 0 0 0.7em rgb(153, 152, 152);
+    box-shadow: 0 0 1.5em rgb(153, 152, 152);
     transition: 0.5s;
 }
 
 .card img{
     height: 100px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
-    border-radius: 0.6em;
 }
 
 .card h2{
@@ -262,8 +263,8 @@ main{
     color: var(--cor6);
 }
 
-.link-card{
-    margin-top: 18px;
+.link-card {
+    margin-top: 44px;
     padding: 8px;
 }
 
@@ -276,7 +277,7 @@ main{
         text-align: center;
         background-image: url(../cursos/imagens/banner-info.jpg);
         background-size: cover;
-        background-position-y: -50vh;
+        background-position-y: -35vh;
         opacity: 90%;
 }
 
@@ -375,7 +376,7 @@ main{
 
 .parallax {
     background-image: url(../imagens/escola01.jpg);
-    height: 390px;
+    height: 580px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

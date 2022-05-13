@@ -1,0 +1,106 @@
+body.fale-conosco{
+    background-image: url(imagens/fale-conosco.jpg);
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body img{
+ height: 8000;
+}
+
+#area-cabecalho-fale-conosco {
+    height: 100px;
+	padding: 10px;
+	text-align: center;
+}
+
+#area-logo, #area-menu {
+	padding: 5px;
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+.logo {
+    width: 402px;
+    height: 80px;
+    background: url(../imagens/logo-menu.png) no-repeat center;
+	text-indent: -3000px;
+}
+
+#area-cabecalho ,a:link ,a:visited {
+	color: darkred;
+	padding: 4px  12px;
+	font-size: 22px;
+}
+
+#area-cabecalho a:hover {
+	color:whitesmoke;
+	background: darkred;
+	text-decoration: none;
+    border-radius: 0.4em;
+}
+
+#area-menu ul{
+    list-style-type: none;
+}
+
+#area-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+#area-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    padding-top: 10px;
+}
+
+#area-menu ul li:hover ul{
+    display: inline-block;
+}
+
+#area-menu ul ul{
+    width: 200px;
+    margin: 20px;
+}
+
+#area-menu ul ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: #D94141;
+    font-size: 20px;
+}
+
+#area-menu ul ul li a:hover{
+    background-color: rgb(158, 36, 36);
+    border-radius: 0;
+}
+
+.icone {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+}
+
+
+form{
+    margin-top: 70px;
+    text-align: center;
+}
+
+form p{
+    margin-top: 20px;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+}
