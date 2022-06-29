@@ -10,6 +10,7 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/style.css">
 
+    
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
@@ -28,52 +29,57 @@
 <body class="no-js">
     <header id="area-cabecalho"><!--Início do Cabeçalho-->
 
-            <img id="area-logo" src="imagens/logo-menu.png" alt="">
+        <a id="area-logo" href="index.html" ><img id="area-logo" src="imagens/logo-menu.png" alt=""></a>
             
          <!--Início do Menu-->
             <nav id="area-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="menu-link">Home</a></li>
                     
-                    <li><a href="">Cursos<img src="imagens/seta.png" class="icone"></a>
+                    <li class="dropdown"><a href="">Cursos<img src="imagens/seta.png" class="icone"></a>
                         <ul>
-                            <li><a href="" class="cursos-menu">Desenvolvimento de Sistemas</a></li>
-                            <li><a href="">Recursos Humanos</a></li>
-                            <li><a href="">Meio Ambiente</a></li>
-                            <li><a href="info.html">Informática</a></li>
-                            <li><a href="">Administração</a></li>
+                            <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
+                            <div class="links">
+                                <li><a href="">Recursos Humanos</a></li>
+                                <li><a href="">Meio Ambiente</a></li>
+                                <li><a href="info.html">Informática</a></li>
+                                <li><a href="">Administração</a></li>
+                            </div>
                         </ul>
                     </li>
-                    <li><a href="">Institucional<img src="imagens/seta.png" class="icone"></a>
+                    <li class="dropdown"><a href="">Institucional<img src="imagens/seta.png" class="icone"></a>
                         <ul>
-                            <li><a href="" class="cursos-menu">Desenvolvimento de Sistemas</a></li>
-                            <li><a href="">Recursos Humanos</a></li>
-                            <li><a href="">Meio Ambiente</a></li>
-                            <li><a href="info.html">Informática</a></li>
-                            <li><a href="">Administração</a></li>
+                                <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
+                                <div class="links">
+                                    <li><a href="">Recursos Humanos</a></li>
+                                    <li><a href="">Meio Ambiente</a></li>
+                                    <li><a href="info.html">Informática</a></li>
+                                    <li><a href="">Administração</a></li>
+                                </div>
                         </ul>
                     </li>
-                    <li><a href="aluno.html">Aluno</a></li>
-                    <li><a href="historia.html">Nossa História</a></li>
-                    <li><a href="professores.html">Professores</a></li>
-                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                    <li><a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a></li>
+                        <li><a href="aluno.html" class="menu-link">Aluno</a></li>
+                        <li><a href="historia.html" class="menu-link">Nossa História</a></li>
+                        <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
                 </ul>
             </nav><!--Fim do Menu-->
 </header><!--Fim do Cabeçalho-->
 
     <main>
         <!--Início do Contéudo-->
-        <div style="clear:both";>
-            <div class="carroussel" >            
+        <main>
+            <section class="carrossel">
                 <div class="fotos">
-                  <figure><img alt="" src="imagens/escola01.jpg" /></figure>
-                  <figure><img alt="" src="imagens/escola02.jpg" /></figure>
-                  <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
-                  <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
-                </div>                    
-              </div>
-        </div>
+                    <img src="imagens/img_escola1.jpg" alt="entrada etec de vila formosa">
+                    <img src="imagens/escola01.jpg" alt="">
+                    <img src="imagens/escola02.jpg" alt="">
+                    <img src="imagens/escola04.jpg" alt="">
+                    <img src="imagens/img_escola1.jpg" alt="">
+                </div>
+                </section>
+            </div>
+        </main>
+
         <section class="historia">
             <h1>Bem vindo(a) a Etec de Vila Formosa</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsa facilis maxime quas fuga,
@@ -127,38 +133,68 @@
                 </section><!--Fim card 5-->
             </section><!--Fim dos cards-->
            
-            <section id="depoimentos">
+            <section id="depoimentos"><!--Início dos depoimentos-->
                <h1 id="titulo-dep">Mensagens dos Formandos</h1> 
-               <span class="img-dep">
+               <div class="container">
                 <img src=../imagens/leo.png alt=""  class="img-dep">
-                <img src=../imagens/bianca.png alt="" class="img-dep">
-                <img src=../imagens/kaua.png alt="" class="img-dep">
-                <img src=../imagens/free.png alt="" class="img-dep">
-               </span><br>
-               <span>
-                <p class="text-dep"><i>“Durante os poucos anos em que estudei na Etec<br> 
-                     fui nutrido pelo ótimo sistema escolar e pela dedi-<br>
-                     cação dos professores que sempre me apoiaram e<br>
-                      ajudaram durante minhas lutas. Eu não teria chega-<br>
-                      do na USP sem a assistência dedicada
-                     de todos os<br> professores e meus colegas de classe da EVF.”</p><br>
+                <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
+                fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
+                ca-<br>ção dos professores que sempre me<br> apoiaram e
+                 ajudaram durante minhas<br> lutas. Eu não teria chega
+                 do na USP<br> sem a assistência dedicada
+               de todos<br> os professores e meus colegas de clas-<br>se da EVF.”</p></i><br>
                 
-                <p class="titulotext-dep">Leo, Cria da EVF</p>     
-               </span></i>
+                <p style="font-size: 20px;">Leo, Cria da EVF</p>
+              
+                </div>
 
+               <div class="container">
+                <img src=../imagens/bianca.png alt=""  class="img-dep">
+                <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
+                fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
+                ca-<br>ção dos professores que sempre me<br> apoiaram e
+                 ajudaram durante minhas<br> lutas. Eu não teria chega
+                 do na USP<br> sem a assistência dedicada
+               de todos<br> os professores e meus colegas de clas-<br>se da EVF.”</p></i><br>
+                
+                <p style="font-size: 20px;">Bianca, Cria da EVF</p>
+              
+                </div>
+
+               <div class="container">
+                <img src=../imagens/kaua.png alt=""  class="img-dep">
+                <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
+                fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
+                ca-<br>ção dos professores que sempre me<br> apoiaram e
+                 ajudaram durante minhas<br> lutas. Eu não teria chega
+                 do na USP<br> sem a assistência dedicada
+               de todos<br> os professores e meus colegas de clas-<br>se da EVF.”</p></i><br>
+                
+                <p style="font-size: 20px;">Kauã, Cria da EVF</p>
+              
+                </div>
+
+               <div class="container">
+                <img src=../imagens/free.png alt=""  class="img-dep">
+                <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
+                fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
+                ca-<br>ção dos professores que sempre me<br> apoiaram e
+                 ajudaram durante minhas<br> lutas. Eu não teria chega
+                 do na USP<br> sem a assistência dedicada
+               de todos<br> os professores e meus colegas de clas-<br>se da EVF.”</p></i><br>
+                
+                <p style="font-size: 20px;">Freefa, Cria da EVF</p>
+              
+                </div>
+            </section><!--Fim dos depoimentos-->
+
+            <!--Inicio Galeria-->
+
+            <section class="galeria">
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9bb3320184e155f8b23c40d2d5d9cddc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
             </section>
-
-            <div class="parallax"><!--Início da Galeria de fotos-->
-                <a href="imagens/galeria01.jpg" target="_blank"><img src="imagens/galeria01.jpg"alt=""></a>
-                <a href="imagens/galeria02.jpg" target="_blank"><img src="imagens/galeria02.jpg" alt=""></a>
-                <a href="imagens/galeria03.jpg" target="_blank"><img src="imagens/galeria03.jpg" alt=""></a>
-                <a href="imagens/galeria04.jpg" target="_blank"><img src="imagens/galeria04.jpg" alt=""></a>
-                <a href="imagens/galeria05.jpg" target="_blank"><img src="imagens/galeria05.jpg" alt=""></a>
-                <a href="imagens/galeria06.jpg" target="_blank"><img src="imagens/galeria06.jpg" alt=""   class="imagem-baixo"></a>
-                <a href="imagens/galeria07.jpg" target="_blank"><img src="imagens/galeria07.jpg" alt=""></a>
-                <a href="imagens/galeria08.jpg" target="_blank"><img src="imagens/galeria08.jpg" alt=""></a>
-                <a href="imagens/galeria09.jpg" target="_blank"><img src="imagens/galeria09.jpg" alt=""></a>
-            </div><!--Fim da Galeria de fotos-->
+            <!--Fim da galeria-->
+            
     </main><!--Fim do Contéudo-->
 
 
@@ -195,7 +231,6 @@
         </address>
     </footer>
 
-        <script src="js/carousel.js"></script>
         <script src="js/main.js"></script>
 </body>
 </html>

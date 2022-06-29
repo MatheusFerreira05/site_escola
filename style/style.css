@@ -19,15 +19,16 @@
 /*Area do menu*/
 
 #area-cabecalho {
-    height: 100px;
+    height: 55px;
 	padding: 10px;
     background-color: rgba(93, 93, 224, 0.1);
 }
 
 
 #area-logo{
-	padding: 5px;
-    width: 350px;
+	padding-right: 10px;
+    width: 300px;
+    height: 50px;
 }
 
 #area-menu {
@@ -41,6 +42,14 @@
 }
  
 /*menu dropdown início*/
+.dropdown-first{
+    border-top: solid 4px #a60000;
+}
+
+.dropdown a{
+    padding-top: 40.6px;
+}
+
 #area-menu ul{
     list-style-type: none;
     padding-top: 20px;
@@ -104,6 +113,8 @@ nav li{
 }
 
 nav a{
+    font-family: sans-serif;
+    font-size: 15px;
     color: #050A31;
     font-weight: bold;
     text-decoration: none;
@@ -111,9 +122,17 @@ nav a{
 }
 
 nav a:hover{
-    transition: ease-in 0.15s;
+    transition: border ease-in 0.15s, color ease-in 0.15s;
     color: #a60000;
-    border-top: 3px solid #a60000; 
+    border-top: 4px solid #a60000; 
+}
+
+.menu-link{
+    padding-top: 40.6px;
+}
+
+.links a:hover{
+    border-top: 0px;
 }
 
 
@@ -263,7 +282,7 @@ main{
 
 .card{
     width: 15%;
-    height: 250px;
+    height: 270px;
     margin: auto;
     font-family: arial;
     background-color: whitesmoke;
@@ -303,8 +322,8 @@ main{
 }
 
 .link-card {
-    margin-top: 44px;
-    padding: 8px;
+    margin: 45px 15px 45px 15px;
+    padding: 4px;
 }
 
 /*Fim dos cards*/
@@ -314,27 +333,11 @@ main{
 
 /*Início da Galeria*/
 
-
-.parallax {
-    background-image: url(../imagens/escola01.jpg);
-    height: 580px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax img{
-    width: 15%;
-    height: 150px;
-    padding: 20px;
-}
-
-.imagem-baixo{
-    width: 20%;
-    display: inline-block;
-    margin-left:90px;
-}
+/*.galeria{
+    justify-content: center;
+    width: 70%;
+    height: 1200px;
+}*/
 
 /*Fim da Galeria*/
 
@@ -565,30 +568,35 @@ address p{
 /*Inicio da formatacao da area dos depoimentos*/
 .img-dep {
     border-radius: 50%;
-    width: 280px;
+    width: 220px;
     padding: 25px;
-    padding-left: 40px;
+    padding-left: 18px;
 }
+.container {
+    width: 20%;
+    height: 500px;
+    margin: auto;
+    font-family: arial;
+    float: left;
+    background-color: #FFF;
+    text-align: center; 
+    margin: 25px;
 
+} 
 .text-dep {
-    padding: 25px;
-    padding-left: 75px;
-    padding-top: 0px;
     font-size: 15px;
+    
 }
 
-.titulotext-dep {
-    padding: 25px;
-    padding-left: 75px;
-    padding-top: 0px;
-    font-size: 20px;
+#depoimentos {
+    background-color: rgb(255, 0, 0);
 }
-
 #titulo-dep {
     color: darkred;
     padding-top: 0px;
     font-size: 50px;
     text-align: center;
     font-family: var(--fonte_principal);
+    background-color: white;
 }
 /*Fim da formatacao da area dos depoimentos*/
