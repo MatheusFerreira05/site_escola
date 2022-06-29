@@ -21,58 +21,29 @@
 #area-cabecalho {
     height: 100px;
 	padding: 10px;
-	text-align: center;
-	background: rgb(116, 2, 2);
+    background-color: rgba(93, 93, 224, 0.1);
 }
 
 
-#area-logo, #area-menu {
+#area-logo{
 	padding: 5px;
-    text-align: center;
+    width: 350px;
 }
 
 #area-menu {
-	background: rgb(253, 251, 251);
 	display: inline-block;
     height: 25px;
     border-radius: 0.4em;
     position: absolute;
     right: 10px;
-    top: 40px;
+    top: 0px;
     margin-right: 40px;
 }
  
-
-/* Formatação do menu*/
-
-  a {
-      text-decoration: none;
-
-}
-
-.logo {
-    width: 402px;
-    height: 80px;
-    background: url(../imagens/logo-menu.png) no-repeat center;
-	text-indent: -3000px;
-}
-
-#area-cabecalho ,a:link ,a:visited {
-	color: darkred;
-	padding: 4px  12px;
-	font-size: 22px;
-}
-
-
-#area-cabecalho a:hover {
-	color:whitesmoke;
-	background: darkred;
-	text-decoration: none;
-    border-radius: 0.4em;
-}
-
+/*menu dropdown início*/
 #area-menu ul{
     list-style-type: none;
+    padding-top: 20px;
 }
 
 #area-menu ul li{
@@ -99,13 +70,60 @@
 #area-menu ul ul li a{
     display: block;
     color: rgb(255, 255, 255);
-    background-color: #D94141;
+    background-color: #050a31a8;
     font-size: 20px;
 }
 
 #area-menu ul ul li a:hover{
-    background-color: rgb(158, 36, 36);
+    background-color: #9e2424a8;
     border-radius: 0;
+}
+/*menu dropdown fim*/
+
+/* Formatação do menu*/
+
+header{
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+nav{
+    float: right;
+    margin-top: 25px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a{
+    color: #050A31;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em;
+}
+
+nav a:hover{
+    transition: ease-in 0.15s;
+    color: #a60000;
+    border-top: 3px solid #a60000; 
+}
+
+
+nav a.ativo{
+    color: #050A31;
+    padding: 1em;
+}
+
+nav a.ativo:hover{
+    color: #a60000;
 }
 
 .icone {
@@ -114,17 +132,11 @@
     margin-left: 6px;
 }
 
-
-
-
-
-
 /*fim formatação do menu*/
 
 /*Formatação conteúdo principal*/
 main{
     background-color: #fff;
-    padding-bottom: 40px;
 }
 
 /* início carroussel */ 
@@ -187,6 +199,34 @@ main{
 /* fim carroussel */ 
 
 
+/*Inicio area história*/
+
+.historia{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 30px;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.historia h1{
+    text-align: center;
+    color: #344E5C;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.historia p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0px 15px 0px; 
+    text-align: justify;
+    text-indent: 2px;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 10px 0px 10px 0px;
+}
+/*Fim historia*/
+
 /*Início dos cards*/
 
 
@@ -212,13 +252,12 @@ main{
     background-color: rgb(255, 255, 255);
     padding-left: 83px;
     padding-right: 40px;
-    border: 1px solid red;
 }
 
 .cursos h1{
     text-align: center;
     color: darkred;
-    font-size: 60px;
+    font-size:50px;
     font-family: var(--fonte_principal);
 }
 
@@ -270,107 +309,9 @@ main{
 
 /*Fim dos cards*/
 
-/*Início da formatação das páginas dos cursos*/
+/*Inicio da formatacao dos depoimentos*/
+/*Fim da formatacao dos depoimentos*/
 
-#area-banner-curso {
-        height: 220px;
-        text-align: center;
-        background-image: url(../cursos/imagens/banner-info.jpg);
-        background-size: cover;
-        background-position-y: -35vh;
-        opacity: 90%;
-}
-
-
- #area-banner-curso h1 {
-       color: white;
-       padding-top: 62px;
-       opacity: 100%;
-       font-size: 5em;
-       text-transform: uppercase;
-       -webkit-text-stroke-width: 2px;
-       -moz-text-stroke-width: 2px;
-       -webkit-text-stroke-color: rgb(4, 91, 141);
-       -moz-text-stroke-color: rgb(4, 91, 141);
-
-}
-
-#area-conteudo-curso {
-    padding-top: 10px;
-    padding-bottom: 75px;
-    height: 1100px;
-    background-color: rgb(255, 255, 255);
-    padding-left: 83px;
-    padding-right: 40px;
-    
-      
-}
-
- .card-curso {
-    width: 25%;
-    height: 450px;
-    margin: auto;
-    font-family: arial;
-    background-color: rgb(5, 119, 185);
-    border: 1.5px solid rgb(230, 227, 227);
-    float: left;
-    text-align: center; 
-    margin: 25px;
-    z-index:1;
- }
-
- .card-curso2 {
-    width: 25%;
-    height: 530px;
-    margin: auto;
-    font-family: arial;
-    background-color: rgb(5, 119, 185);
-    border: 1.5px solid rgb(230, 227, 227);
-    float: left;
-    text-align: center; 
-    margin: 25px;
-    z-index: 2;
- }
-
-
- #area-conteudo-curso h2 {
-     color: rgb(240, 236, 236);
-     padding-top: 25px;
- }
-    
-#area-conteudo-curso p {
-    color:white;
-    padding-top: 40px;
-}
-
-.card-curso-img {
-    height: 200px;
-    width: 280px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-}
-
-.card-curso-img2 {
-    height: 200px;
-    width: 280px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-}
-
-.card-curso-img3 {
-    height: 160px;
-    width: 280px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-}
-
-/*Fim da formatação das páginas dos cursos*/
 /*Início da Galeria*/
 
 
@@ -398,9 +339,10 @@ main{
 /*Fim da Galeria*/
 
 /*Início do rodapé*/
+
 footer{
     width: 100%;
-    background-color: rgb(116, 2, 2);
+    background-color: #1e56a0;
 }
 
 #rodape{
@@ -456,7 +398,7 @@ address{
     margin-top: 15px;
     height: 50px;
     text-align: center;
-    background-color: rgb(116, 2, 2);
+    background-color: rgb(40, 134, 206);
 }
 
 address p{
@@ -469,11 +411,7 @@ address p{
 
 /*Início formatação área história*/
 
-main{
-    background-color: gainsboro;
-    width: 100%;
-    height: 1500px;
-}
+
 
 .conteudo-principal-historia{
     background-color: rgb(249, 249, 240);
@@ -541,13 +479,9 @@ main{
     height: 150px;
     width: 250px;
 }
-/*fim formatação área história
+/*fim formatacao area historia*/
 
-início da fomatação página professores*/
-
-main{
-    margin-bottom: 200px;
-}
+/*inicio da fomatacao pagina professores*/
 
 .conteudo-pricipal-membros{
     padding-top: 10px;
@@ -626,3 +560,35 @@ main{
     height: 150px;
     width: 300px;
 }
+/*Fim da formatacao da area professores*/
+
+/*Inicio da formatacao da area dos depoimentos*/
+.img-dep {
+    border-radius: 50%;
+    width: 280px;
+    padding: 25px;
+    padding-left: 40px;
+}
+
+.text-dep {
+    padding: 25px;
+    padding-left: 75px;
+    padding-top: 0px;
+    font-size: 15px;
+}
+
+.titulotext-dep {
+    padding: 25px;
+    padding-left: 75px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+#titulo-dep {
+    color: darkred;
+    padding-top: 0px;
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--fonte_principal);
+}
+/*Fim da formatacao da area dos depoimentos*/
