@@ -10,7 +10,6 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/style.css">
 
-    
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
@@ -36,10 +35,13 @@
                 <ul>
                     <li><a href="index.html" class="menu-link">Home</a></li>
                     
-                    <li class="dropdown"><a href="">Cursos<img src="imagens/seta.png" class="icone"></a>
+                    <li class="dropdown">
+                        <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
+                        
                         <ul>
                             <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
                             <div class="links">
+                                
                                 <li><a href="">Recursos Humanos</a></li>
                                 <li><a href="">Meio Ambiente</a></li>
                                 <li><a href="info.html">Informática</a></li>
@@ -47,7 +49,9 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="">Institucional<img src="imagens/seta.png" class="icone"></a>
+                    <li>
+                        <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
+                        
                         <ul>
                                 <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
                                 <div class="links">
@@ -57,10 +61,12 @@
                                     <li><a href="">Administração</a></li>
                                 </div>
                         </ul>
-                    </li>
+
                         <li><a href="aluno.html" class="menu-link">Aluno</a></li>
-                        <li><a href="historia.html" class="menu-link">Nossa História</a></li>
+                        <li><a href="fale-conosco.html" class="menu-link">Fale Conosco</a></li>
+                        <li><a href="professores.html" class="menu-link">Nossos Professores</a></li>
                         <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                    </li>
                 </ul>
             </nav><!--Fim do Menu-->
 </header><!--Fim do Cabeçalho-->
@@ -68,16 +74,14 @@
     <main>
         <!--Início do Contéudo-->
         <main>
-            <section class="carrossel">
+            <div class="carroussel">            
                 <div class="fotos">
-                    <img src="imagens/img_escola1.jpg" alt="entrada etec de vila formosa">
-                    <img src="imagens/escola01.jpg" alt="">
-                    <img src="imagens/escola02.jpg" alt="">
-                    <img src="imagens/escola04.jpg" alt="">
-                    <img src="imagens/img_escola1.jpg" alt="">
-                </div>
-                </section>
-            </div>
+                  <figure><img alt="" src="imagens/escola01.jpg" /></figure>
+                  <figure><img alt="" src="imagens/escola02.jpg" /></figure>
+                  <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
+                  <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
+                </div>                    
+              </div>
         </main>
 
         <section class="historia">
@@ -135,7 +139,7 @@
            
             <section id="depoimentos"><!--Início dos depoimentos-->
                <h1 id="titulo-dep">Mensagens dos Formandos</h1> 
-               <div class="container">
+               <div class="container-dep">
                 <img src=../imagens/leo.png alt=""  class="img-dep">
                 <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
                 fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
@@ -145,10 +149,10 @@
                de todos<br> os professores e meus colegas de clas-<br>se da EVF.”</p></i><br>
                 
                 <p style="font-size: 20px;">Leo, Cria da EVF</p>
-              
+            
                 </div>
 
-               <div class="container">
+               <div class="container-dep">
                 <img src=../imagens/bianca.png alt=""  class="img-dep">
                 <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
                 fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
@@ -161,7 +165,7 @@
               
                 </div>
 
-               <div class="container">
+               <div class="container-dep">
                 <img src=../imagens/kaua.png alt=""  class="img-dep">
                 <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
                 fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
@@ -174,7 +178,7 @@
               
                 </div>
 
-               <div class="container">
+               <div class="container-dep">
                 <img src=../imagens/free.png alt=""  class="img-dep">
                 <p class="text-dep"><i>“Durante os poucos anos em que<br> estudei na Etec 
                 fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
@@ -191,15 +195,18 @@
             <!--Inicio Galeria-->
 
             <section class="galeria">
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9bb3320184e155f8b23c40d2d5d9cddc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                
+                <div class="imagens-galeria">
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9bb3320184e155f8b23c40d2d5d9cddc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                </div>
             </section>
             <!--Fim da galeria-->
             
     </main><!--Fim do Contéudo-->
 
 
-    <footer>
-        <section id="rodape">
+    
+        <section id="rodape-info">
                 <section class="biblioteca">
                     <h2>Biblioteca</h2>
                     <p>Segundas/Quartas/Sextas:8h às 17h</p>
@@ -229,7 +236,9 @@
             <hr>
             <p>Desenvolvido por EVF 2022</p>
         </address>
-    </footer>
+        
+        <script src="js/menu.js"></script>
+        <script src="js/carousel.js"></script>
 
         <script src="js/main.js"></script>
 </body>

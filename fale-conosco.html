@@ -27,54 +27,60 @@
     <title>Home - Etec de Vila Formosa</title>
 </head>
 <body class="fale-conosco">
-    <header id="area-cabecalho"><!--Início do Cabeçalho-->
-            <div id="area-logo"></div>
-                <h1 class="logo">Etec de Vila Formosa</h1>
-            </div>
-             <!--Início do Menu-->
-                <nav id="area-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="historia.html">Nossa História</a></li>
-                        <li><a href="">Cursos<img src="imagens/seta.png" class="icone"></a>
-                            <ul>
-                                <li><a href="" class="cursos-menu">Desenvolvimento de Sistemas</a></li>
-                                <li><a href="">Recursos Humanos</a></li>
-                                <li><a href="">Meio Ambiente</a></li>
-                                <li><a href="info.html">Informática</a></li>
-                                <li><a href="">Administração</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Institucional <img src="imagens/seta.png" class="icone"></a>
-                            <ul>
-                                <li><a href="" class="cursos-menu">Desenvolvimento de Sistemas</a></li>
-                                <li><a href="">Recursos Humanos</a></li>
-                                <li><a href="">Meio Ambiente</a></li>
-                                <li><a href="info.html">Informática</a></li>
-                                <li><a href="">Administração</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="professores.html">Professores</a></li>
-                        <li><a href="">Aluno</a></li>
-                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                        <li><a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a></li>
-                    </ul>
+   
                 </nav><!--Fim do Menu-->
     </header><!--Fim do Cabeçalho-->
 
     <main>
+        
+            <figure id="container">
+                <img src="imagens/fale-conosco.png">
+                <figcaption>Fale Conosco</figcaption>
+            </figure>
             <div class="formulario">
                 <form action="dados" method="post">
                     <p>Nome Completo:</p>
-                    <input type="text" name="txtNome"><br>
+                    <input type="text" name="txtNome" class="nome" placeholder="Digite seu Nome"><br>
                     <p>Email:</p>
-                    <input type="text" name="txtEmail">
+                    <input type="text" name="txtEmail" placeholder="Digite seu e-mail">
                     <p>Assunto:</p>
-                    <input type="text" name="txtAssunto">
+                    <input type="text" name="txtAssunto" placeholder="Digite o assunto da mensagem">
                     <p>Sua mensagem:</p>
-                    <textarea name="txtMensagem" cols="50" rows="10"></textarea>
+                    <textarea name="txtMensagem" cols="50" rows="10" placeholder="Digite sua mensagem aqui!"></textarea>
+                    <br>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
     </main>
+
+    <section id="rodape-info">
+        <section class="biblioteca">
+            <h2>Biblioteca</h2>
+            <p>Segundas/Quartas/Sextas:8h às 17h</p>
+            <p>Terças/Quintas:12h às 21h</p>
+        </section>
+        <section class="secretaria">
+            <h2>Secretaria</h2>
+            <p>De segunda a sexta:</p>
+            <p>Manhã 9:30h às 12h</p>
+            <p>Tarde: 14h às 16h</p>
+            <p>Noite: 18h às 20h</p>
+           
+    </section>
+    <section class="endereco">
+        <h2>Etec de vila Formosa</h2>
+        <p>Jardim Vila Formosa - São Paulo Rua Bactória, 38</p>
+    </section>
+    <section class="redes">
+        <h2>Redes Sociais</h2>
+        <a href="https://www.facebook.com/etecdevilaformosaevf" target="_blank"><img src="imagens/icone-facebook.png" alt="icone do facebook"></a>
+        <a href="https://www.instagram.com/etec_vilaformosa/" target="_blank"><img src="imagens/icone-instagram.png" alt="icone do instagram"></a>
+        <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q" target="_blank"><img src="imagens/icone-youtube.png" alt="icone do youtube"></a>
+        <a href="https://twitter.com/etecvf" target="_blank"><img src="imagens/icone-twitter.png" alt=""></a>
+    </section>
+</section>
+<address>
+    <hr>
+    <p>Desenvolvido por EVF 2022</p>
+</address>
 

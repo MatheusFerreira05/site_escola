@@ -1,5 +1,11 @@
-body.fale-conosco{
-    background-image: url(imagens/fale-conosco.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#ffffff;
     height: 580px;
     background-attachment: fixed;
     background-position: center;
@@ -7,100 +13,111 @@ body.fale-conosco{
     background-size: cover;
 }
 
-body img{
- height: 8000;
-}
-
-#area-cabecalho-fale-conosco {
-    height: 100px;
-	padding: 10px;
-	text-align: center;
-}
-
-#area-logo, #area-menu {
-	padding: 5px;
-    text-align: center;
-}
-
-
-
-a {
-    text-decoration: none;
-
-}
-
-.logo {
-    width: 402px;
-    height: 80px;
-    background: url(../imagens/logo-menu.png) no-repeat center;
-	text-indent: -3000px;
-}
-
-#area-cabecalho ,a:link ,a:visited {
-	color: darkred;
-	padding: 4px  12px;
-	font-size: 22px;
-}
-
-#area-cabecalho a:hover {
-	color:whitesmoke;
-	background: darkred;
-	text-decoration: none;
-    border-radius: 0.4em;
-}
-
-#area-menu ul{
-    list-style-type: none;
-}
-
-#area-menu ul li{
-    display: inline;
-    position: relative;
-}
-
-#area-menu ul ul{
-    display: none;
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-}
-
-#area-menu ul li:hover ul{
+#container {
     display: inline-block;
+    position: relative;
+    width: 1200px;
+  }
+  
+  #container figcaption {
+    position: absolute;
+    top: 125px;
+    right: 50px;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0px 0px 5px black;
+  }
+
+img{
+    width: 112%;
+    height: 300px;
 }
 
-#area-menu ul ul{
-    width: 200px;
-    margin: 20px;
+.formulario{
+    /*background: red;*/
+    width: 400px;
+    padding: 20px;
+    align-items: center;
 }
-
-#area-menu ul ul li a{
-    display: block;
-    color: rgb(255, 255, 255);
-    background-color: #D94141;
-    font-size: 20px;
-}
-
-#area-menu ul ul li a:hover{
-    background-color: rgb(158, 36, 36);
-    border-radius: 0;
-}
-
-.icone {
-    width: 12px;
-    height: 12px;
-    margin-left: 6px;
-}
-
 
 form{
     margin-top: 70px;
-    text-align: center;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 10px 0px 0px 20px;
 }
 
 form p{
-    margin-top: 20px;
+    margin: 10px 0px 0px 50px;
     color: darkred;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 20px;
+    text-align: left;
+}
+
+#rodape-info{
+    width: 100%;
+    background-color: #1e56a0;
+}
+
+#rodape-info{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+#rodape-info h2{
+    color: #fff;
+    font-family: 'Roboto',arial, sans-serif;
+    font-size: 20px;
+}
+
+#rodape-info p{
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f4d8d8;
+    font-size: 15px;
+}
+
+#rodape-info img{
+    height: 25px;
+    width: 25px;
+    margin: 8px;
+}
+
+#rodape-info h3{
+    color: #344E5C;
+    padding: 0px 20px ;
+}
+
+.secretaria, .biblioteca,.endereco, .redes{
+    padding-left: 120px;
+}
+
+.biblioteca h3{
     text-align: center;
+}
+
+.endereco{
+    width: 150px;;
+    height: 120px;
+}
+
+.redes{
+    padding-top: 25px;
+    width: 150px;
+    height: 120px;
+}
+
+address{
+    height: 50px;
+    text-align: center;
+    background-color: rgb(40, 134, 206);
+}
+
+address p{
+    padding-top: 15px;
+    font-family: var(--fonte_titulo2);
+    color: whitesmoke;
 }
