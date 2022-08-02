@@ -40,6 +40,9 @@ img{
     align-items: center;
 }
 
+.faleconosco {
+    margin-right: 380px;
+}
 form{
     margin-top: 70px;
     margin-bottom: 20px;
@@ -48,14 +51,57 @@ form{
 }
 
 form p{
-    margin: 10px 0px 0px 50px;
-    color: darkred;
+    
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
 }
 
+form input[type=submit] {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid cornflowerblue;
+    height: 50px;
+    width: 240px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form input:focus, form textarea:focus {
+        background-color: wheat;
+}
+.mensagem {
+     border-radius: 20px;
+     width: 900px;
+     height: 180px;
+     border: 1px solid cornflowerblue;
+     padding-left: 15px;
+     padding-top: 15px;
+}
+
+.nome {
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+.email {
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+.assunto {
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
 #rodape-info{
     width: 100%;
     background-color: #1e56a0;

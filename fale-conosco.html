@@ -35,18 +35,18 @@
         
             <figure id="container">
                 <img src="imagens/fale-conosco.png">
-                <figcaption>Fale Conosco</figcaption>
+                <figcaption class="faleconosco">Fale Conosco</figcaption>
             </figure>
             <div class="formulario">
                 <form action="dados" method="post">
-                    <p>Nome Completo:</p>
-                    <input type="text" name="txtNome" class="nome" placeholder="Digite seu Nome"><br>
-                    <p>Email:</p>
-                    <input type="text" name="txtEmail" placeholder="Digite seu e-mail">
-                    <p>Assunto:</p>
-                    <input type="text" name="txtAssunto" placeholder="Digite o assunto da mensagem">
-                    <p>Sua mensagem:</p>
-                    <textarea name="txtMensagem" cols="50" rows="10" placeholder="Digite sua mensagem aqui!"></textarea>
+                    <p>Nome</p>
+                    <input type="text" name="nome" class="nome" placeholder="Digite seu Nome" required><br><br><br>
+                    <p>Email</p>
+                    <input type="email" name="email" class="email" placeholder="Digite seu e-mail" required><br><br><br>
+                    <p>Assunto</p>
+                    <input type="text" name="assunto" class="assunto" placeholder="Digite o assunto da mensagem" required><br><br><br>
+                    <p>Mensagem</p>
+                    <textarea name="mensagem" class="mensagem" cols="50" rows="10" placeholder="Digite sua mensagem aqui!" required></textarea>
                     <br>
                     <input type="submit" value="Enviar">
                 </form>
