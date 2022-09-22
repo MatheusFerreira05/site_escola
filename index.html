@@ -19,8 +19,8 @@
 
     <!--Compatibilidade-->
     <!--[if IE]>
-		 <script src="https://cdnjs.cloudflare.com/ajaz/libs/html5shiv/3.7.3/html5shiv.js"></script>
-	<! [endif] -->	 
+         <script src="https://cdnjs.cloudflare.com/ajaz/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <! [endif] -->   
 
 
     <title>Home - Etec de Vila Formosa</title>
@@ -57,20 +57,20 @@
                                 <div class="links">
                                     <li><a href="">Recursos Humanos</a></li>
                                     <li><a href="">Meio Ambiente</a></li>
-                                    <li><a href="info.html">Informática</a></li>
+                                    <li><a href="">Informática</a></li>
                                     <li><a href="">Administração</a></li>
                                 </div>
                         </ul>
 
                         <li><a href="aluno.html" class="menu-link">Aluno</a></li>
-                        <li><button id="myBtn" >Fale Conosco</button>
+                        <li style="cursor: pointer"><a id="myLink" class="menu-link">Fale Conosco</a>
 
                             <!-- The Modal -->
-                            <div id="myModal" class="modal" class="menu-link">
+                            <div id="myModal" class="modal menu-link">
                         
                                 <!-- Modal content -->
-                                <div class="modal-content" class="menu-link">
-                                    <span class="close">&times;</span>           
+                                <div class="modal-content menu-link">
+                                    <span class="close">&times;</span>        
                                     <form action="ins.php" enctype="multipart/form-data" method="post">
                                     <p>Nome:</p><br/>
                                     <input type="text" name="nome" id="nome" placeholder="Digite seu Nome"/><br/>
@@ -91,13 +91,13 @@
                               var modal = document.getElementById("myModal");
                         
                               // Get the button that opens the modal
-                              var btn = document.getElementById("myBtn");
+                              var link = document.getElementById("myLink");
                         
                               // Get the <span> element that closes the modal
                               var span = document.getElementsByClassName("close")[0];
                         
                               // When the user clicks on the button, open the modal
-                              btn.onclick = function() {
+                              link.onclick = function() {
                                 modal.style.display = "block";
                               }
                         
@@ -126,8 +126,6 @@
         <main>
            <div class="carroussel">            
                 <div class="fotos">
-                  <figure><img alt="" src="imagens/escola01.jpg" /></figure>
-                  <figure><img alt="" src="imagens/escola02.jpg" /></figure>
                   <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
                   <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
                 </div>                    
