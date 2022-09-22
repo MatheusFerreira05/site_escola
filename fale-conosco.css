@@ -34,7 +34,6 @@ img{
 }
 
 .formulario{
-    /*background: red;*/
     width: 400px;
     padding: 20px;
     align-items: center;
@@ -71,7 +70,7 @@ form input[type=submit] {
 }
 
 form input:focus, form textarea:focus {
-        background-color: wheat;
+    background-color: wheat;
 }
 .mensagem {
      border-radius: 20px;
