@@ -303,8 +303,10 @@ form input:focus, form textarea:focus {
 }
 
 .parallax{
-    background-image: url('../imagens/cursos/imgfundo.jpg');
+    background-image: url('../imagens/cursos/imagem_do_laptop.jpg');
 }
+
+
 
 .cursos{
     margin: 70px;
