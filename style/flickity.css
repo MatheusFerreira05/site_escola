@@ -15,7 +15,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-slider {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -44,7 +44,7 @@ https://flickity.metafizzy.co
 /* ---- flickity-button ---- */
 
 .flickity-button {
-  position: absolute;
+  position: relative;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
@@ -99,7 +99,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button .flickity-button-icon {
-  position: absolute;
+  position: relative;
   left: 20%;
   top: 20%;
   width: 60%;
@@ -109,7 +109,7 @@ https://flickity.metafizzy.co
 /* ---- page dots ---- */
 
 .flickity-page-dots {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: -25px;
   padding: 0;

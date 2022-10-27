@@ -31,9 +31,9 @@ body {
 /*Inicio Area do menu*/
 
 #area-cabecalho {
-    height: 55px;
+    height: 65px;
 	padding: 10px;
-    background-color: rgba(93, 93, 224, 0.1);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 125px;
 }
 
@@ -41,7 +41,7 @@ body {
 #area-logo{
 	padding-right: 10px;
     width: 300px;
-    height: 50px;
+    height: 68px;
 }
 
 #area-menu {
@@ -56,12 +56,17 @@ body {
 
 /*Fim Area do menu*/
  
+hr#menu{
+    border-color:#FDD16E;
+}
 /*menu dropdown início*/
 .dropdown-first{
-    border-top: solid 4px #a60000;
+    border-top: solid 4px black;
 } 
 
-
+.dropdown-first:hover{
+    border-top: solid 4px black;
+} 
 
 #area-menu ul{
     list-style-type: none;
@@ -91,13 +96,13 @@ body {
 
 #area-menu ul ul li a{
     display: block;
-    color: rgb(255, 255, 255);
-    background-color: #050a31a8;
+    color: black;
+    background-color: whitesmoke;
     font-size: 15px;
 }
 
 #area-menu ul ul li a:hover{
-    background-color: #9e2424a8;
+    background-color: #e4a803;
     border-radius: 0;
 }
 /*menu dropdown fim*/
@@ -135,8 +140,8 @@ nav a{
 
 nav a:hover{
     transition: border ease-in 0.15s, color ease-in 0.15s;
-    color: #a60000;
-    border-top: 4px solid #a60000; 
+    color: #e4a803;
+    border-top: 4px solid #FDD16E; 
 }
 
 .menu-link{
@@ -305,7 +310,7 @@ main{
 
 .historia h1{
     text-align: center;
-    color: #344E5C;
+    color: #e4a803;
     margin-bottom: 30px;
     font-size: 50px;
 }
@@ -326,7 +331,7 @@ main{
 
 .card a {
        color: black;
-       border: 1px solid #FAE62A;
+       border: 1px solid #e4a803;
        display: block;
        border-radius: 0.25em;
        font-size: 18px;
@@ -350,7 +355,7 @@ main{
 
 .cursos h1{
     text-align: center;
-    color: darkred;
+    color: #e4a803;
     font-size:50px;
     font-family: var(--fonte_principal);
 }
@@ -368,7 +373,7 @@ main{
 }
 
 .card:hover{
-    box-shadow: 0 0 1.5em #fae52ad0;
+    box-shadow: 0 0 1.5em #e4a803;
     transition: 0.5s;
 }
 
@@ -383,7 +388,7 @@ main{
 .card h2{
     margin-top: 30px;
     text-align: center;
-    color: #E4D12C;
+    color: #e4a803;
     font-size: 15px;
     padding: 10px;
 }
@@ -397,8 +402,8 @@ main{
 }
 
 .link-card {
-    margin: 45px 15px 45px 15px;
-    padding: 4px;
+    margin: 65px 15px 45px 15px;
+    padding: 8px;
 }
 
 /*Fim dos cards*/
@@ -430,7 +435,7 @@ main{
 
 #rodape-info{
     width: 100%;
-    background-color: #1e56a0;
+    background-color: rgb(76, 76, 76);
 }
 
 #rodape-info{
@@ -458,6 +463,11 @@ main{
     margin: 8px;
 }
 
+#rodape-info .logorodape{
+    width: 200px;
+    height: 200px;
+}
+
 #rodape-info h3{
     color: #344E5C;
     padding: 0px 20px ;
@@ -469,6 +479,10 @@ main{
 
 .biblioteca h3{
     text-align: center;
+}
+
+hr#rodape{
+    border-color: #FDD16E;
 }
 
 .endereco{
@@ -487,11 +501,14 @@ main{
     height: 64px;
 }
 
+.redes img:hover{
+    color: #050A31;
+}
+
 address{
     height: 50px;
     text-align: center;
-    background-color: rgb(40, 134, 206);
-    
+    background-color: rgb(42, 42, 42);
 }
 
 address p{
@@ -534,7 +551,6 @@ address p{
 
 .conteudo-principal-historia p a:hover{
     text-decoration: underline;
-
 }
 
 .menu-lateral-historia{
@@ -677,7 +693,7 @@ address p{
     height: 700px;
 }
 #titulo-dep {
-    color: #333333;
+    color: #e4a803;
     padding-top: 0px;
     font-size: 50px;
     text-align: center;
