@@ -324,6 +324,20 @@ form input:focus, form textarea:focus {
     padding: 20px;
 }
 
+.competencias{
+    width: 60%;
+    max-width: 600px;
+    display:inline-block;
+    margin: 90px;
+}
+
+.competencias details summary{
+    color: #bfc8d5;
+    background-color: rgb(24, 22, 22);
+    padding: 2%;
+    border-bottom: 2px solid #e3e0e0;
+}
+
 /*rodape*/
 #rodape-info{
     width: 100%;
