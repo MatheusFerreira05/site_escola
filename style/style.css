@@ -339,7 +339,7 @@ main{
 
 .card a:hover {
       color: white;
-      background-color: black;
+      background-color: #4c4c4c;
       transition: 0.7s ease all;
       cursor: pointer;
 }
@@ -678,7 +678,7 @@ address p{
     margin: auto;
     font-family: arial;
     float: left;
-    background-color: #E6E6E6;
+    background-color: #ffffff;
     text-align: center; 
     margin: 25px;
 
@@ -688,7 +688,7 @@ address p{
 }
 
 #depoimentos {
-    background-color: #E6E6E6;
+    background-color: #ffffff;
     width: auto;
     height: 700px;
 }
@@ -698,7 +698,11 @@ address p{
     font-size: 50px;
     text-align: center;
     font-family: var(--fonte_principal);
-    background-color: #E6E6E6;
+    background-color: #ffffff;
+}
+
+hr.depoimentos{
+    border-color: #FDD16E;
 }
 /*Fim da formatacao da area dos depoimentos*/
 
