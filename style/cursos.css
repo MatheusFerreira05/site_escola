@@ -332,19 +332,39 @@ form textarea:focus {
 
 
 .cursos {
-    margin: 70px;
+    margin: 50px;
+}
+
+#curso {
+    padding: 15px;
+    font-family: Bradley Hand, cursive;
+}
+
+#titleh {
+    padding: 15px;
+    font-family: Bradley Hand, cursive;
 }
 
 .sobre {
+    font-family: Comic Sans MS, Comic Sans, cursive;
     float: left;
     width: 45%;
-    padding: 20px;
+    padding: 40px;
+}
+
+.tecnologo {
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    float: left;
+    width: 45%;
+    padding: 55px;
 }
 
 .habilidades {
+    font-family: Comic Sans MS, Comic Sans, cursive;
     float: right;
     width: 45%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .competencias {
@@ -355,8 +375,8 @@ form textarea:focus {
 }
 
 .competencias details summary {
-    color: #bfc8d5;
-    background-color: rgb(24, 22, 22);
+    color: white;
+    background-color: #2A2A2A;
     padding: 2%;
     border-bottom: 2px solid #e3e0e0;
 }
