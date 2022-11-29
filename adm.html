@@ -60,29 +60,28 @@
                                     <li><a href="">Administração</a></li>
                                 </div>
                         </ul>
-
-                        <li><a href="aluno.html" class="menu-link">Aluno</a></li>
                         <li style="cursor: pointer"><a id="myLink" class="menu-link">Fale Conosco</a>
 
                             <!-- The Modal -->
                             <div id="myModal" class="modal menu-link">
-                        
+        
                                 <!-- Modal content -->
                                 <div class="modal-content menu-link">
-                                    <span class="close">&times;</span>        
-                                    <form action="ins.php" enctype="multipart/form-data" method="post">
-                                    <p>Nome:</p><br/>
-                                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome"/><br/>
-                                    <p>E-mail:</p><br/>
-                                    <input type="text" name="preco" id="email" placeholder="Digite seu Email"/><br/>
-                                    <p>Assunto:</p><br/>
-                                    <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem"/><br/>
-                                    <p>Mensagem:</p> <br>
-                                    <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br/>
-                                    <input type="submit"/><br/>
+                                    <span class="close">&times;</span>
+                                    <h2 id="fale-conosco">Fale Conosco</h2>
+                                    <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                        <p>Nome:</p><br />
+                                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                        <p>E-mail:</p><br />
+                                        <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                        <p>Assunto:</p><br />
+                                        <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                        <p>Mensagem:</p> <br>
+                                        <textarea name="mensagem" id="mensagem" cols="15" rows="3" placeholder="Digite sua mensagem"></textarea><br />
+                                        <input type="submit" /><br />
                                     </form>
                                 </div>
-                        
+        
                             </div>
                         </li>
                         
@@ -121,7 +120,7 @@
 </header><!--Fim do Cabeçalho-->
 
 <main>
-    <section class="parallax">
+    <section class="parallax-adm">
         <h1>Administração</h1>
         <p>Full Stack,Apps & Banco de dados</p>
         <p>Curso Técnico</p>
@@ -143,11 +142,11 @@
     
     <section class="competencias">
         <details>
-            <summary>1º Ano</summary>
+            <summary>1º Ano <img src="imagens/seta.png" class="icone"></summary>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti eveniet aliquam maiores! Expedita fugit quo, amet enim dolor officia aliquam. Molestias vitae doloribus pariatur. Atque sed eos nihil ratione?</p>
         </details>
         <details>
-            <summary>2º Ano</summary>
+            <summary>2º Ano <img src="imagens/seta.png" class="icone"></summary>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti eveniet aliquam maiores! Expedita fugit quo, amet enim dolor officia aliquam. Molestias vitae doloribus pariatur. Atque sed eos nihil ratione?</p>
         </details>
 
@@ -189,7 +188,7 @@
 </section>
 </section>
 <address style="clear: both;">
-<hr>
+<hr class="rodape">
 <p>Desenvolvido por EVF 2022</p>
 </address>
 

@@ -21,9 +21,9 @@ body {
     --cor5: #8CD0F5;
     --cor6: #AD060E;
 
-    --fonte_principal: 'Montserrat', sans-serif;
-    --font_titulo: 'Open Sans', sans-serif;
-    --fonte_titulo2: 'Roboto', sans-serif;
+    --fonte_principal: 'Noto Sans', sans-serif;
+    --font_titulo: 'Noto Sans', sans-serif;
+    --fonte_titulo2: 'Noto Sans', sans-serif;
 }
 
 /*Inicio Config Geral*/
@@ -177,6 +177,14 @@ nav a.ativo:hover {
 
 
 /* formatação do modal e fale conosco*/
+#fale-conosco{
+    color: #e4a803;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -263,7 +271,8 @@ form input[type=submit] {
     border: 1px solid #e4a803;
     height: 50px;
     width: 240px;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
@@ -274,7 +283,7 @@ form textarea:focus {
 
 #mensagem {
     border-radius: 20px;
-    width: 900px;
+    width: 700px;
     height: 180px;
     border: 1px solid #FDD16E;
     padding-left: 15px;
@@ -327,7 +336,7 @@ main {
 }
 
 h1.tituloHistoria {
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
     text-align: center;
     color: #e4a803;
     margin-bottom: 30px;
@@ -336,7 +345,7 @@ h1.tituloHistoria {
 }
 
 .historia p {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Noto Sans, sans-serif;
     margin: 15px 0px 15px 0px;
     text-align: justify;
     text-indent: 2px;
@@ -349,23 +358,23 @@ h1.tituloHistoria {
 
 /*Início dos cards*/
 .card a {
-
-    color: black;
+    color: white;
     border: 1px solid #e4a803;
+    background-color: #e4a803;
     display: block;
     border-radius: 0.25em;
     font-size: 18px;
 }
 
 .card a:hover {
-    color: white;
-    background-color: #4c4c4c;
+    color: #e4a803;
+    background-color: white;
     transition: 0.7s ease all;
     cursor: pointer;
 }
 
 .text-card {
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
 }
 
 .cursos {
@@ -380,7 +389,7 @@ h1.tituloCardCursos {
     text-align: center;
     color: #e4a803;
     font-size: 50px;
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
     padding-top: 40px;
 }
 
@@ -427,15 +436,18 @@ h1.tituloCardCursos {
 }
 
 .link-card {
-    font-family: Bradley Hand, cursive;
-    margin: 65px 15px 45px 15px;
-    padding: 8px;
+    font-family: Noto Sans, sans-serif;
+    margin: 70px 0px 40px 0px;
+    padding: 5px 8px;
+    width: 92.7%;
 }
 
+
 .link-cardDS {
-    font-family: Bradley Hand, cursive;
-    margin: 65px 15px 45px 15px;
-    padding: 8px;
+    font-family: Noto Sans, sans-serif;
+    margin: 70px 0px 40px 0px;
+    padding: 5px 8px;
+    width: 92.7%;
 }
 
 /*Fim dos cards*/
@@ -672,78 +684,6 @@ address p {
 
 /*Fim do rodapé*/
 
-/*Início formatação área história*/
-
-
-
-.conteudo-principal-historia {
-    background-color: rgb(249, 249, 240);
-    float: right;
-    margin-right: 20%;
-    margin-top: 20px;
-    width: 700px;
-}
-
-.conteudo-principal-historia h1 {
-    font-family: var(--fonte-titulo);
-    color: brown;
-    padding: 10px;
-    text-align: center;
-}
-
-.conteudo-principal-historia p {
-    font-family: var(--fonte-principal);
-    padding: 20px;
-}
-
-.conteudo-principal-historia p a {
-    font-family: var(--fonte-principal);
-    font-size: 1em;
-    padding: 0px;
-}
-
-.conteudo-principal-historia p a:hover {
-    text-decoration: underline;
-}
-
-.menu-lateral-historia {
-    padding-top: 30px;
-    padding-left: 20px;
-    width: 300px;
-}
-
-.menu-lateral-historia ul {
-    list-style-type: none;
-}
-
-.menu-lateral-historia ul li {
-    background-color: brown;
-    padding: 7px;
-}
-
-.menu-lateral-historia a {
-    font-size: 20px;
-    color: azure;
-}
-
-.menu-lateral-historia a:hover {
-    background-color: darkred;
-}
-
-.imagens-historia {
-    float: right;
-    margin-top: 20px;
-    padding-left: 45px;
-}
-
-.imagens-historia img {
-    padding: 20px;
-    height: 150px;
-    width: 250px;
-}
-
-/*fim formatacao area historia*/
-
 /*inicio da fomatacao pagina professores*/
 
 #menu-prof ul {
@@ -812,6 +752,92 @@ address p {
 
 /*Fim da formatacao da area professores*/
 
+/*Inicio formatacao index dos professores*/
+
+
+.card-prof a {
+
+    color: black;
+    border: 1px solid #e4a803;
+    display: block;
+    border-radius: 0.35em;
+    font-size: 18px;
+}
+
+.card-prof a:hover {
+    color: white;
+    background-color: #4c4c4c;
+    transition: 0.7s ease all;
+    cursor: pointer;
+}
+.img-prof {
+    width: 80px;
+    height: 180px;
+}
+
+.text-card-prof {
+    font-family: Noto Sans, sans-serif;
+}
+
+.professores {
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.card-prof {
+    width: 15%;
+    height: 390px;
+    margin: auto;
+    font-family: arial;
+    background-color: rgb(245, 245, 245);
+    border: 1.5px solid rgb(230, 227, 227);
+    float: left;
+    text-align: center;
+    margin: 25px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.card-prof:hover {
+    box-shadow: 0 0 1.5em #e4a803;
+    transition: 0.5s;
+}
+
+.card-prof img {
+    height: 100px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-prof h2 {
+    margin-top: 6px;
+    text-align: center;
+    color: #black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-prof p {
+    margin-top: 225px;
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    
+    
+    
+}
+
+
+
+/*fim da formatacao index dos professores*/
 /*Inicio da formatacao da area dos depoimentos*/
 #depoimentos {
     background-color: #ffffff;
@@ -841,7 +867,7 @@ address p {
 }
 
 .text-dep {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Noto Sans, sans-serif;
     font-size: 15px;
 }
 
@@ -850,7 +876,7 @@ address p {
     padding-top: 50px;
     font-size: 50px;
     text-align: center;
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
     background-color: #ffffff;
 }
 

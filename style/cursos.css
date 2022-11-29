@@ -164,6 +164,14 @@ nav a.ativo:hover {
 }
 
 /*inicio modal*/
+#fale-conosco{
+    color: #e4a803;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -223,7 +231,7 @@ nav a.ativo:hover {
 
 #myBtn:hover {
     transition: border ease-in 0.15s, color ease-in 0.15s;
-    color: black;
+    color: #a60000;
     border-top: 4px solid #a60000;
 }
 
@@ -244,13 +252,14 @@ form p {
 }
 
 form input[type=submit] {
-    background-color: cornflowerblue;
+    background-color: #e4a803;
     color: white;
     border-radius: 20px;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #e4a803;
     height: 50px;
     width: 240px;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
@@ -261,29 +270,29 @@ form textarea:focus {
 
 #mensagem {
     border-radius: 20px;
-    width: 900px;
+    width: 700px;
     height: 180px;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #FDD16E;
     padding-left: 15px;
     padding-top: 15px;
 }
 
 #nome {
-    border: 1px solid cornflowerblue;
+    border: 1px solid #FDD16E;
     border-radius: 20px;
     padding: 15px;
     width: 250px;
 }
 
 #email {
-    border: 1px solid cornflowerblue;
+    border: 1px solid #FDD16E;
     border-radius: 20px;
     padding: 15px;
     width: 250px;
 }
 
 #assunto {
-    border: 1px solid cornflowerblue;
+    border: 1px solid #FDD16E;
     border-radius: 20px;
     padding: 15px;
     width: 250px;
@@ -292,7 +301,9 @@ form textarea:focus {
 /*fim modal*/
 
 /*parallax*/
-.parallax {
+.parallax-ds,
+.parallax-ma,
+.parallax-adm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,30 +317,33 @@ form textarea:focus {
     background-size: cover;
 }
 
-.parallax h1 {
+.parallax-ds h1,
+.parallax-ma h1 {
     color: black;
     text-shadow: 0 1px black;
     font-size: 25px;
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
     text-align: center;
     padding: 20px;
 }
 
-.parallax p {
+.parallax-ds p,
+.parallax-ma p {
     color: black;
-    ;
     font-size: 20px;
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
     text-align: center;
     text-shadow: 0 1px black;
     padding: 10px;
 }
 
-.parallax {
-    background-image: url('../imagens/imgds.png');
+.parallax-ma {
+    background-image: url('../imagens/meio_ambiente.png');
 }
 
-
+.parallax-ds{
+    background-image: url(../imagens/imgds.png);
+}
 
 .cursos {
     margin: 50px;
@@ -340,10 +354,6 @@ form textarea:focus {
     font-family: Bradley Hand, cursive;
 }
 
-#titleh {
-    padding: 15px;
-    font-family: Bradley Hand, cursive;
-}
 
 .sobre {
     font-family: Comic Sans MS, Comic Sans, cursive;
@@ -352,33 +362,89 @@ form textarea:focus {
     padding: 40px;
 }
 
-.tecnologo {
-    text-align: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    float: left;
-    width: 45%;
-    padding: 55px;
-}
 
 .habilidades {
     font-family: Comic Sans MS, Comic Sans, cursive;
     float: right;
-    width: 45%;
+    width: 40%;
     padding: 40px;
+}
+
+#informacoes{
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
+    width: 90%;
+    z-index: 3;
 }
 
 .competencias {
     width: 60%;
     max-width: 600px;
-    display: inline-block;
-    margin: 90px;
+    float: left;
+    margin: 120px;
+}
+
+.competencias h2{
+    font-size: 2.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.competencias h3{
+    font-size: 1.5em;
+}
+
+.competencias details{
+    width: 1000px;
+    margin: 15px auto;
 }
 
 .competencias details summary {
     color: white;
-    background-color: #2A2A2A;
-    padding: 2%;
-    border-bottom: 2px solid #e3e0e0;
+    background-color: #e4a803;
+    border: 1px solid #e4a803;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    padding: 1%;
+}
+
+.competencias details summary:hover{
+    color: black;
+    background-color: #e4a803;
+    border: 1px solid #3e4549;
+}
+
+.competencias summary img{
+    float: right;
+    padding-top: 10px;
+}
+
+.grade{
+    margin-right: -1px;
+    padding: 30px 12px 90px;
+}
+
+.btn{
+    background: none;
+    border-width: 0 1px 1px 0;
+    color: #91a3ad;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font: 16px/24px Gotham HTF Light;
+    outline: none;
+    padding: 30px 0;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 24.6%;
+    z-index: 2;
+}
+
+.grade-span{
+    display: table-cell;
+    padding: 0 30px;
+    vertical-align: middle;
 }
 
 /*rodape*/

@@ -60,29 +60,29 @@
                                     <li><a href="">Administração</a></li>
                                 </div>
                         </ul>
-
-                        <li><a href="aluno.html" class="menu-link">Aluno</a></li>
-                        <li style="cursor: pointer"><a id="myLink" class="menu-link">Fale Conosco</a>
-
+                        <li style="cursor: pointer">
+                            <a id="myLink" class="menu-link">Fale Conosco</a>
+        
                             <!-- The Modal -->
                             <div id="myModal" class="modal menu-link">
-                        
+        
                                 <!-- Modal content -->
                                 <div class="modal-content menu-link">
-                                    <span class="close">&times;</span>        
-                                    <form action="ins.php" enctype="multipart/form-data" method="post">
-                                    <p>Nome:</p><br/>
-                                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome"/><br/>
-                                    <p>E-mail:</p><br/>
-                                    <input type="text" name="preco" id="email" placeholder="Digite seu Email"/><br/>
-                                    <p>Assunto:</p><br/>
-                                    <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem"/><br/>
-                                    <p>Mensagem:</p> <br>
-                                    <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br/>
-                                    <input type="submit"/><br/>
+                                    <span class="close">&times;</span>
+                                    <h2 id="fale-conosco">Fale Conosco</h2>
+                                    <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                        <p>Nome:</p><br />
+                                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                        <p>E-mail:</p><br />
+                                        <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                        <p>Assunto:</p><br />
+                                        <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                        <p>Mensagem:</p> <br>
+                                        <textarea name="mensagem" id="mensagem" cols="15" rows="3" placeholder="Digite sua mensagem"></textarea><br />
+                                        <input type="submit" /><br />
                                     </form>
                                 </div>
-                        
+        
                             </div>
                         </li>
                         
@@ -121,7 +121,7 @@
 </header><!--Fim do Cabeçalho-->
 
 <main>
-    <section class="parallax">
+    <section class="parallax-ds">
         <h1>Análise e Desenvolvimento de Sistemas</h1>
         <p>Full Stack,Apps & Banco de dados</p>
         <p>Curso Técnico</p>
@@ -136,29 +136,39 @@
         </section>
 
         <section class="habilidades">
-            <h2 id="titleh">Você será capaz de:</h2>
+            <h2 id="curso">Você será capaz de:</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem, accusantium doloremque explicabo velit veniam asperiores reiciendis illo voluptate eaque est quae alias, ut quasi laborum nobis sequi officiis quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sed tempore veniam, nostrum minima ipsum mollitia dolore quas at earum corporis nam sunt nobis deserunt quasi aliquam laudantium distinctio voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolorem soluta itaque nisi! Nesciunt voluptatum debitis sequi laudantium assumenda eos, explicabo vel dolor neque, maxime recusandae reiciendis quam delectus maiores.</p>
         </section>
     </div>
 
-        <section class="tecnologo">
-             <h4 id="titlet">TECNÓLOGO</h2>
-                <p>Duração:</p>
-                <p>Modalidade:</p>
-    </section>
 </div>
-    
-    <section class="competencias">
-        <details>
-            <summary>1º Ano</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti eveniet aliquam maiores! Expedita fugit quo, amet enim dolor officia aliquam. Molestias vitae doloribus pariatur. Atque sed eos nihil ratione?</p>
-        </details>
-        <details>
-            <summary>2º Ano</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti eveniet aliquam maiores! Expedita fugit quo, amet enim dolor officia aliquam. Molestias vitae doloribus pariatur. Atque sed eos nihil ratione?</p>
-        </details>
-
-    </section>
+        <div id="informacoes">
+            <section class="competencias">
+                <h2>Matriz Curricular</h2>
+                <h3>-1600 horas/aula</h3>
+                <details>
+                    <summary>1º Ano <img src="imagens/seta.png" class="icone"></summary>
+                    <div class="grade">
+                        <button class="btn">
+                            <span class="grade-span">
+                                PAM
+                            </span>
+                        </button>
+                    </div>
+                    <div class="grade">
+                        <button class="btn">
+                            <span class="grade-span">
+                                PAM
+                            </span>
+                        </button>
+                    </div>
+                </details>
+                <details>
+                    <summary>2º Ano <img src="imagens/seta.png" class="icone"></summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti eveniet aliquam maiores! Expedita fugit quo, amet enim dolor officia aliquam. Molestias vitae doloribus pariatur. Atque sed eos nihil ratione?</p>
+                </details>
+            </section>
+        </div>
 </main>
 
 
@@ -195,7 +205,7 @@
 </section>
 </section>
 <address style="clear: both;">
-<hr class="rodape">
+<hr class="rodape"> 
 <p>Desenvolvido por EVF 2022</p>
 </address>
 
