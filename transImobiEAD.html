@@ -29,102 +29,76 @@
     <title>Home - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
-    <header id="area-cabecalho"><!--Início do Cabeçalho-->
-
-        <a id="area-logo" href="index.html" ><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
-    <hr id="menu">
-         <!--Início do Menu-->
+        <!--Início do Cabeçalho-->
+        <header id="area-cabecalho">
+            
+            <!--Início do Menu-->
             <nav id="area-menu">
+                <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
                 <ul>
                     <li><a href="index.html" class="menu-link">Home</a></li>
-                    
                     <li class="dropdown">
                         <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
-                        
+    
                         <ul>
                             <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                            <div class="links">                     
-                                <li><a href="rh.html">Recursos Humanos</a></li>
-                                <li><a href="meioambiente.html">Meio Ambiente</a></li>
-                                <li><a href="info.html">Informática</a></li>
-                                <li><a href="adm.html">Administração</a></li>
+                            <div class="links">
+                            <li><a href="rh.html">Recursos Humanos</a></li>
+                            <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                            <li><a href="info.html">Informática</a></li>
+                            <li><a href="adm.html">Administração</a></li>
                             </div>
                         </ul>
                     </li>
                     <li>
                         <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
-                        
+    
                         <ul>
-                                <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                                <div class="links">
-                                    <li><a href="">Recursos Humanos</a></li>
-                                    <li><a href="">Meio Ambiente</a></li>
-                                    <li><a href="">Informática</a></li>
-                                    <li><a href="">Administração</a></li>
-                                </div>
-                        </ul>
-                        <li style="cursor: pointer">
-                            <a id="myLink" class="menu-link">Fale Conosco</a>
-        
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal menu-link">
-        
-                                <!-- Modal content -->
-                                <div class="modal-content menu-link">
-                                    <span class="close">&times;</span>
-                                    <h2 id="fale-conosco">Fale Conosco</h2>
-                                    <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
-                                        <p>Nome:</p><br />
-                                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
-                                        <p>E-mail:</p><br />
-                                        <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
-                                        <p>Assunto:</p><br />
-                                        <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
-                                        <p>Mensagem:</p> <br>
-                                        <textarea name="mensagem" id="mensagem" cols="15" rows="3" placeholder="Digite sua mensagem"></textarea><br />
-                                        <input type="submit" /><br />
-                                    </form>
-                                </div>
-        
+                            <li><a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/22.07.23-Regimento-Comum-das-Etecs.pdf" target="_blank" class="dropdown-first">Regimento Comum</a></li>
+                            <div class="links">
+                            <li><a href="">Recursos Humanos</a></li>
+                            <li><a href="">Meio Ambiente</a></li>
+                            <li><a href="">Informática</a></li>
+                            <li><a href="">Administração</a></li>
                             </div>
-                        </li>
+                        </ul>
+    
+                    <li><a href="aluno.html" class="menu-link">Aluno</a></li>
+                    <li style="cursor: pointer">
+                        <a id="myLink" class="menu-link">Fale Conosco</a>
                         
-                            <script>
-                              var modal = document.getElementById("myModal");
-                        
-                              // Get the button that opens the modal
-                              var link = document.getElementById("myLink");
-                        
-                              // Get the <span> element that closes the modal
-                              var span = document.getElementsByClassName("close")[0];
-                        
-                              // When the user clicks on the button, open the modal
-                              link.onclick = function() {
-                                modal.style.display = "block";
-                              }
-                        
-                              // When the user clicks on <span> (x), close the modal
-                              span.onclick = function() {
-                                modal.style.display = "none";
-                              }
-                        
-                              // When the user clicks anywhere outside of the modal, close it
-                              window.onclick = function(event) {
-                                if (event.target == modal) {
-                                  modal.style.display = "none";
-                                }
-                              }
-                        </script>
-
-                        <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
-                        <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal menu-link">
+    
+                            <!-- Modal content -->
+                            <div class="modal-content menu-link">
+                                <span class="close">&times;</span>
+                                <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                    <p>Nome:</p><br />
+                                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                    <p>E-mail:</p><br />
+                                    <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                    <p>Assunto:</p><br />
+                                    <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                    <p>Mensagem:</p> <br>
+                                    <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                                    <input type="submit" /><br />
+                                </form>
+                            </div>
+    
+                        </div>
                     </li>
+    
+                    <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
+                    <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                    <li><a href="login/index.php" class="menu-link">Login</a></li>
                 </ul>
+                <hr class="menu">
             </nav><!--Fim do Menu-->
-</header><!--Fim do Cabeçalho-->
+        </header><!--Fim do Cabeçalho-->
 
 <main>
-    <section class="parallax-ds">
+    <section class="parallax-ti">
         <h1>Transações Imobiliárias (EaD - On-line)</h1>
         <p>Full Stack,Apps & Banco de dados</p>
         <p>Curso Técnico</p>

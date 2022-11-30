@@ -165,7 +165,12 @@ form textarea:focus {
 .parallax-adm,
 .parallax-info,
 .parallax-rh,
-.parallax-prof {
+.parallax-prof,
+.parallax-com,
+.parallax-sec,
+.parallax-gt,
+.parallax-gp,
+.parallax-ti {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +189,12 @@ form textarea:focus {
 .parallax-adm h1,
 .parallax-info h1,
 .parallax-rh h1,
-.parallax-prof h1 {
+.parallax-prof h1,
+.parallax-com h1,
+.parallax-sec h1,
+.parallax-gt h1,
+.parallax-gp h1,
+.parallax-ti h1 {
     color: black;
     text-shadow: 0 1px black;
     font-size: 25px;
@@ -198,7 +208,12 @@ form textarea:focus {
 .parallax-adm p,
 .parallax-info p,
 .parallax-rh p,
-.parallax-prof p {
+.parallax-prof p,
+.parallax-com p,
+.parallax-sec p,
+.parallax-gt p,
+.parallax-gp p,
+.parallax-ti p {
     color: black;
     font-size: 20px;
     font-family: Noto Sans, sans-serif;
@@ -229,6 +244,26 @@ form textarea:focus {
 
 .parallax-prof{
     background-image: url('../imagens/prof.png');
+}
+
+.parallax-com{
+    background-image: url('../imagens/cursos/comercio.png');
+}
+
+.parallax-sec{
+    background-image: url('../imagens/cursos/secretariado.png');
+}
+
+.parallax-gt{
+    background-image: url('../imagens/cursos/gt.png');
+}
+
+.parallax-gp{
+    background-image: url('../imagens/cursos/gp.png');
+}
+
+.parallax-ti{
+    background-image: url('../imagens/cursos/ti.png');
 }
 
 .cursos {
@@ -263,91 +298,6 @@ form textarea:focus {
     width: 90%;
     z-index: 3;
 }
-
-.competencias {
-    width: 60%;
-    max-width: 600px;
-    float: left;
-    margin: 120px;
-}
-
-.competencias h2{
-    font-size: 2.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.competencias h3{
-    font-size: 1.5em;
-}
-
-.competencias details{
-    width: 1000px;
-    margin: 15px auto;
-}
-
-details.infos{
-    width: 1000px;
-    margin: 15px auto;
-    transition: all 0.4s ease-in-out;
-}
-.competencias details summary {
-    color: white;
-    background-color: #e4a803;
-    border: 1px solid #e4a803;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    padding: 1%;
-}
-
-.competencias details summary:hover{
-    color: black;
-    background-color: #e4a803;
-    border: 1px solid #3e4549;
-}
-
-.competencias summary img{
-    float: right;
-    padding-top: 10px;
-}
-
-.grade{
-    margin-right: -1px;
-    padding: 30px 12px 90px;
-    display: inline;
-}
-
-.btn{
-    background-color: #e4a803;
-    color: black;
-    cursor: pointer;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    font: 16px/24px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    outline: none;
-    padding: 30px 0 ;
-    position: relative;
-    text-align: left;
-    text-transform: uppercase;
-    width: 24.6%;
-    z-index: 2;
-    margin: 20px 20px;
-    width: 250px;
-    height: 100px;
-}
-
-.btn:hover{
-    color: black;
-    background-color: #fdce4c;
-    border: 1px solid black;
-}
-
-.grade-span{
-    display: table-cell;
-    padding: 0 30px;
-    vertical-align: middle;
-}
-
 /*rodape*/
 #rodape-info {
     width: 100%;

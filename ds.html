@@ -13,6 +13,9 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/cursos.css">
 
+    <!--MODAL CURSOS-->
+    <link rel="stylesheet" href="style/modal-cursos.css">
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
@@ -88,7 +91,6 @@
     
                         </div>
                     </li>
-                    <script src="js/modal.js"></script>
     
                     <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
                     <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
@@ -136,93 +138,85 @@
                 <details class="infos">
                     <summary>1º Ano <img src="imagens/seta.png" class="icone"></summary>
                     <div class="grade">
-                        <button class="btn">
+                        <button  onclick="acao()" class="btn">
                             <span class="grade-span">
                                 Programação Mobile
                             </span>
                         </button>
+                            <div class="modal-info">
+                                123
+                                <div onclick="fechar()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                        
+                            </div>
+                            <button  onclick="acao2()" class="btn2">
+                                <span class="grade-span">
+                                    Programação web
+                                </span>
+                            </button>
+                                <div class="modal-info2">
+                                    321
+                                    <div onclick="fechar2()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                                </div>
+                                <button  onclick="acao3()" class="btn2">
+                                    <span class="grade-span">
+                                        FUNDAMENTOS da Informática
+                                    </span>
+                                </button>
+                                    <div class="modal-info3">
+                                        21
+                                        <div onclick="fechar3()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                                    </div>
+
+                      </div>
+                    </details>
+                    <details>
+                        <summary>2º Ano <img src="imagens/seta.png" class="icone"></summary>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    Programação Mobile
+                                </span>
+                            </button>
+                        </div>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    Banco de Dados
+                                </span>
+                            </button>
+                        </div>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    Programação de Algoritimos
+                                </span>
+                            </button>
+                        </div>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    Análise e Projeto de Sistemas
+                                </span>
+                            </button>
+                        </div>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    FUNDAMENTOS DA Informática
+                                </span>
+                            </button>
+                        </div>
+                        <div class="grade">
+                            <button class="btn">
+                                <span class="grade-span">
+                                    DESIGN DIGITAL
+                                </span>
+                            </button>
+                        </div>
+                    </details>
                     </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Banco de Dados
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação de Algoritimos
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Análise e Projeto de Sistemas
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                FUNDAMENTOS DA Informática
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                DESIGN DIGITAL
-                            </span>
-                        </button>
-                    </div>
-                </details>
-                <details>
-                    <summary>2º Ano <img src="imagens/seta.png" class="icone"></summary>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação Mobile
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Banco de Dados
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação de Algoritimos
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Análise e Projeto de Sistemas
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                FUNDAMENTOS DA Informática
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                DESIGN DIGITAL
-                            </span>
-                        </button>
-                    </div>
-                </details>
+                
+                
             </section>
         </div>
 </main>
@@ -267,7 +261,8 @@
 
 <script src="js/menu.js"></script>
 <script src="js/carousel.js"></script>
-
+<script src="js/modal.js"></script>
 <script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
