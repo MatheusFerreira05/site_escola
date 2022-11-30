@@ -16,147 +16,6 @@
     --fonte_titulo2: 'Roboto', sans-serif;
 }
 
-/*Inicio Config Geral*/
-/*Fim Config Geral*/
-
-
-/*Inicio Area do menu*/
-
-#area-cabecalho {
-    height: 65px;
-    padding: 10px;
-    background-color: white;
-}
-
-
-#area-logo {
-    padding-right: 10px;
-    width: 300px;
-    height: 68px;
-}
-
-#area-menu {
-    display: inline-block;
-    height: 25px;
-    border-radius: 0.4em;
-    position: absolute;
-    z-index : 99;
-    right: 10px;
-    top: 0px;
-    margin-right: 40px;
-}
-
-/*Fim Area do menu*/
-
-hr#menu {
-    
-    border: solid 3px #FDD16E;
-}
-
-/*menu dropdown início*/
-.dropdown-first {
-    border-top: solid 4px black;
-}
-
-.dropdown-first:hover {
-    border-top: solid 4px #e4a803;
-}
-
-#area-menu ul {
-    list-style-type: none;
-    padding-top: 25px;
-}
-
-#area-menu ul li {
-    display: inline;
-    position: relative;
-}
-
-#area-menu ul ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-}
-
-#area-menu ul li:hover ul {
-    display: inline-block;
-}
-
-#area-menu ul ul {
-    width: 200px;
-    margin: 20px;
-}
-
-#area-menu ul ul li a {
-    display: block;
-    color: black;
-    background-color: whitesmoke;
-    font-size: 15px;
-}
-
-#area-menu ul ul li a:hover {
-    background-color: #e4a803;
-    border-radius: 0;
-}
-
-/*menu dropdown fim*/
-
-/* Formatação do menu*/
-
-header {
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-nav {
-    float: right;
-    margin-top: 25px;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav a {
-    font-family: sans-serif;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1em;
-}
-
-nav a:hover {
-    transition: border ease-in 0.15s, color ease-in 0.15s;
-    color: #e4a803;
-    border-top: 4px solid #FDD16E;
-}
-
-.menu-link {
-    padding-top: 40.6px;
-}
-
-.links a:hover {
-    border-top: 0px;
-}
-
-
-nav a.ativo {
-    color: #050A31;
-    padding: 1em;
-}
-
-nav a.ativo:hover {
-    color: black;
-}
-
 .icone {
     width: 12px;
     height: 12px;
@@ -303,7 +162,10 @@ form textarea:focus {
 /*parallax*/
 .parallax-ds,
 .parallax-ma,
-.parallax-adm {
+.parallax-adm,
+.parallax-info,
+.parallax-rh,
+.parallax-prof {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,7 +180,11 @@ form textarea:focus {
 }
 
 .parallax-ds h1,
-.parallax-ma h1 {
+.parallax-ma h1,
+.parallax-adm h1,
+.parallax-info h1,
+.parallax-rh h1,
+.parallax-prof h1 {
     color: black;
     text-shadow: 0 1px black;
     font-size: 25px;
@@ -328,7 +194,11 @@ form textarea:focus {
 }
 
 .parallax-ds p,
-.parallax-ma p {
+.parallax-ma p,
+.parallax-adm p,
+.parallax-info p,
+.parallax-rh p,
+.parallax-prof p {
     color: black;
     font-size: 20px;
     font-family: Noto Sans, sans-serif;
@@ -338,11 +208,27 @@ form textarea:focus {
 }
 
 .parallax-ma {
-    background-image: url('../imagens/meio_ambiente.png');
+    background-image: url('../imagens/cursos/ma.png');
 }
 
 .parallax-ds{
-    background-image: url(../imagens/imgds.png);
+    background-image: url('../imagens/cursos/ds.png');
+}
+
+.parallax-adm{
+    background-image: url('../imagens/cursos/adm.png');
+}
+
+.parallax-info{
+    background-image: url('../imagens/cursos/info.png');
+}
+
+.parallax-rh{
+    background-image: url('../imagens/cursos/rh.png');
+}
+
+.parallax-prof{
+    background-image: url('../imagens/prof.png');
 }
 
 .cursos {
@@ -351,12 +237,12 @@ form textarea:focus {
 
 #curso {
     padding: 15px;
-    font-family: Bradley Hand, cursive;
+    font-family: Noto Sans, sans-serif;
 }
 
 
 .sobre {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Noto Sans, sans-serif;
     float: left;
     width: 45%;
     padding: 40px;
@@ -364,7 +250,7 @@ form textarea:focus {
 
 
 .habilidades {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Noto Sans, sans-serif;
     float: right;
     width: 40%;
     padding: 40px;
@@ -399,6 +285,11 @@ form textarea:focus {
     margin: 15px auto;
 }
 
+details.infos{
+    width: 1000px;
+    margin: 15px auto;
+    transition: all 0.4s ease-in-out;
+}
 .competencias details summary {
     color: white;
     background-color: #e4a803;
@@ -422,23 +313,33 @@ form textarea:focus {
 .grade{
     margin-right: -1px;
     padding: 30px 12px 90px;
+    display: inline;
 }
 
 .btn{
-    background: none;
-    border-width: 0 1px 1px 0;
-    color: #91a3ad;
+    background-color: #e4a803;
+    color: black;
     cursor: pointer;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font: 16px/24px Gotham HTF Light;
+    font: 16px/24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none;
-    padding: 30px 0;
+    padding: 30px 0 ;
     position: relative;
     text-align: left;
     text-transform: uppercase;
     width: 24.6%;
     z-index: 2;
+    margin: 20px 20px;
+    width: 250px;
+    height: 100px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #fdce4c;
+    border: 1px solid black;
 }
 
 .grade-span{

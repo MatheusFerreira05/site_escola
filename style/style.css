@@ -26,165 +26,6 @@ body {
     --fonte_titulo2: 'Noto Sans', sans-serif;
 }
 
-/*Inicio Config Geral*/
-/*Fim Config Geral*/
-
-
-/*Inicio Area do menu*/
-
-#area-cabecalho {
-    height: 65px;
-    padding: 10px;
-    background-color: white;
-}
-
-
-#area-logo {
-    padding-right: 10px;
-    width: 300px;
-    height: 68px;
-}
-
-#area-menu {
-    display: inline-block;
-    height: 25px;
-    border-radius: 0.4em;
-    position: absolute;
-    z-index: 99;
-    right: 10px;
-    top: 0px;
-    margin-right: 40px;
-}
-
-/*Fim Area do menu*/
-
-hr#menu {
-
-    border: solid 3px #FDD16E;
-}
-
-/*menu dropdown início*/
-.dropdown-first {
-    margin-top: 2px;
-    border-top: solid 3px black;
-}
-
-.dropdown-first:hover {
-    border-top: solid 3px #c08d00;
-}
-
-#area-menu ul {
-    list-style-type: none;
-    padding-top: 25px;
-}
-
-#area-menu ul li {
-    display: inline;
-    position: relative;
-}
-
-#area-menu ul ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
-}
-
-#area-menu ul li:hover ul {
-    display: inline-block;
-}
-
-#area-menu ul ul {
-    width: 200px;
-    margin: 20px;
-}
-
-#area-menu ul ul li a {
-    display: block;
-    color: black;
-    background-color: whitesmoke;
-    font-size: 15px;
-}
-
-#area-menu ul ul li a:hover {
-
-    background-color: #e4a803;
-    border-radius: 0;
-}
-
-/*menu dropdown fim*/
-
-/* Formatação do menu*/
-
-header {
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-nav {
-    float: right;
-    margin-top: 25px;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav a {
-    font-family: sans-serif;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 1em;
-}
-
-nav a:hover {
-    transition: border ease-in 0.15s, color ease-in 0.15s;
-    color: #e4a803;
-    border-top: 4px solid #FDD16E;
-}
-
-.menu-link {
-    padding-top: 40.6px;
-}
-
-.links a:hover {
-    border-top: 0px;
-}
-
-
-nav a.ativo {
-    color: #050A31;
-    padding: 1em;
-}
-
-nav a.ativo:hover {
-    color: black;
-}
-
-.icone {
-    width: 12px;
-    height: 12px;
-    margin-left: 6px;
-}
-
-
-/* formatação do modal e fale conosco*/
-#fale-conosco{
-    color: #e4a803;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 2em;
-    margin-top: 20px;
-}
-
 .modal {
     display: none;
     /* Hidden by default */
@@ -437,7 +278,7 @@ h1.tituloCardCursos {
 
 .link-card {
     font-family: Noto Sans, sans-serif;
-    margin: 70px 0px 40px 0px;
+    margin: 60px 0px 40px 0px;
     padding: 5px 8px;
     width: 92.7%;
 }
@@ -445,7 +286,7 @@ h1.tituloCardCursos {
 
 .link-cardDS {
     font-family: Noto Sans, sans-serif;
-    margin: 70px 0px 40px 0px;
+    margin: 60px 0px 40px 0px;
     padding: 5px 8px;
     width: 92.7%;
 }
@@ -820,7 +661,7 @@ address p {
 .card-prof h2 {
     margin-top: 6px;
     text-align: center;
-    color: #black;
+    color: black;
     font-size: 20px;
     padding: 10px;
 }
@@ -830,9 +671,6 @@ address p {
     text-align: center;
     display: inline;
     font-size: 14px;
-    
-    
-    
 }
 
 

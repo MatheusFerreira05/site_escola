@@ -13,6 +13,8 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
+    <!--Menu-->
+    <link rel="stylesheet" href="style/menu.css">
 
     <!--Normalize CSS-->
     <link rel="stylesheet" type="text/css" href="style/normalize.css">
@@ -26,102 +28,78 @@
     <title>Home - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
-    <header id="area-cabecalho"><!--Início do Cabeçalho-->
+     <!--Início do Cabeçalho-->
+     <header id="area-cabecalho">
+            
+        <!--Início do Menu-->
+        <nav id="area-menu">
+            <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
 
-        <a id="area-logo" href="index.html" ><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
-    <hr id="menu">
-         <!--Início do Menu-->
-            <nav id="area-menu">
-                <ul>
-                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <ul>
+                        <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
+                        <div class="links">
+                        <li><a href="rh.html">Recursos Humanos</a></li>
+                        <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                        <li><a href="info.html">Informática</a></li>
+                        <li><a href="adm.html">Administração</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
+
+                    <ul>
+                        <li><a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/22.07.23-Regimento-Comum-das-Etecs.pdf" target="_blank" class="dropdown-first">Regimento Comum</a></li>
+                        <div class="links">
+                        <li><a href="">Recursos Humanos</a></li>
+                        <li><a href="">Meio Ambiente</a></li>
+                        <li><a href="">Informática</a></li>
+                        <li><a href="">Administração</a></li>
+                        </div>
+                    </ul>
+
+                <li><a href="aluno.html" class="menu-link">Aluno</a></li>
+                <li style="cursor: pointer">
+                    <a id="myLink" class="menu-link">Fale Conosco</a>
                     
-                    <li class="dropdown">
-                        <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
-                        
-                        <ul>
-                            <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                            <div class="links">
-                                <li><a href="rh.html">Recursos Humanos</a></li>
-                                <li><a href="meioambiente.html">Meio Ambiente</a></li>
-                                <li><a href="info.html">Informática</a></li>
-                                <li><a href="adm.html">Administração</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
-                        
-                        <ul>
-                                <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                                <div class="links">
-                                    <li><a href="">Recursos Humanos</a></li>
-                                    <li><a href="">Meio Ambiente</a></li>
-                                    <li><a href="">Informática</a></li>
-                                    <li><a href="">Administração</a></li>
-                                </div>
-                        </ul>
-                        <li style="cursor: pointer"><a id="myLink" class="menu-link">Fale Conosco</a>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal menu-link">
 
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal menu-link">
-        
-                                <!-- Modal content -->
-                                <div class="modal-content menu-link">
-                                    <span class="close">&times;</span>
-                                    <h2 id="fale-conosco">Fale Conosco</h2>
-                                    <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
-                                        <p>Nome:</p><br />
-                                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
-                                        <p>E-mail:</p><br />
-                                        <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
-                                        <p>Assunto:</p><br />
-                                        <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
-                                        <p>Mensagem:</p> <br>
-                                        <textarea name="mensagem" id="mensagem" cols="15" rows="3" placeholder="Digite sua mensagem"></textarea><br />
-                                        <input type="submit" /><br />
-                                    </form>
-                                </div>
-        
-                            </div>
-                        </li>
-                        
-                            <script>
-                              var modal = document.getElementById("myModal");
-                        
-                              // Get the button that opens the modal
-                              var link = document.getElementById("myLink");
-                        
-                              // Get the <span> element that closes the modal
-                              var span = document.getElementsByClassName("close")[0];
-                        
-                              // When the user clicks on the button, open the modal
-                              link.onclick = function() {
-                                modal.style.display = "block";
-                              }
-                        
-                              // When the user clicks on <span> (x), close the modal
-                              span.onclick = function() {
-                                modal.style.display = "none";
-                              }
-                        
-                              // When the user clicks anywhere outside of the modal, close it
-                              window.onclick = function(event) {
-                                if (event.target == modal) {
-                                  modal.style.display = "none";
-                                }
-                              }
-                        </script>
+                        <!-- Modal content -->
+                        <div class="modal-content menu-link">
+                            <span class="close">&times;</span>
+                            <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                <p>Nome:</p><br />
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                <p>E-mail:</p><br />
+                                <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                <p>Assunto:</p><br />
+                                <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                <p>Mensagem:</p> <br>
+                                <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                                <input type="submit" /><br />
+                            </form>
+                        </div>
 
-                        <li><a href="professores.html" class="menu-link">Nossos Professores</a></li>
-                        <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
-                    </li>
-                </ul>
-            </nav><!--Fim do Menu-->
-</header><!--Fim do Cabeçalho-->
+                    </div>
+                </li>
+                <script src="js/modal.js"></script>
+
+                <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
+                <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                <li><a href="login/index.php" class="menu-link">Login</a></li>
+            </ul>
+            <hr class="menu">
+        </nav><!--Fim do Menu-->
+    </header><!--Fim do Cabeçalho-->
 
 <main>
     <section class="parallax-ma">
-        <h1>Meio Ambiente</h1>
+        <h1>Meio Ambiente (M-Tec)</h1>
         <p>Full Stack,Apps & Banco de dados</p>
         <p>Curso Técnico</p>
     </section>
@@ -129,14 +107,38 @@
     <div class="cursos">
         <section class="sobre">
             <h2 id="curso">O Curso</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, amet nulla iusto, cum nobis alias id commodi, eos consequuntur omnis tenetur ducimus? Voluptatibus laudantium culpa qui provident, aperiam porro explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea porro, ducimus eos nihil iste a, voluptatem esse unde eaque quam repudiandae totam dolores, voluptates necessitatibus incidunt dolor quae magni.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi earum aliquam autem blanditiis ex in amet! Tempora, sapiente modi quisquam a sint eligendi error quo deserunt molestias perferendis cupiditate commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem iure atque dignissimos vero aliquam mollitia a, quisquam aut nobis dolorum possimus ipsam dicta quam, tenetur porro minima, quae voluptatum quia.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos similique ut ullam error dolore, hic placeat iste quidem delectus, beatae, at cum deleniti natus accusamus eaque maxime rerum nulla?</p>
+            <p>Nesta modalidade de ensino, baseada na Lei nº 13.415/17, o aluno cursará 
+                o Ensino Médio estruturado em conjunto com a formação de Técnico em Meio 
+                Ambiente, numa jornada de até 30 aulas semanais (até 6 aulas diárias), em 
+                cada uma das 3 séries. Ao final do curso, o aluno terá concluído o Ensino 
+                Médio e obterá, também, o diploma de Técnico em Meio Ambiente, com validade 
+                nacional. <p>
+            </p>
+            <p>Eixo Tecnológico: Ambiente e saúde<p>
         </section>
 
         <section class="habilidades">
             <h2 id="titleh">Você será capaz de:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem, accusantium doloremque explicabo velit veniam asperiores reiciendis illo voluptate eaque est quae alias, ut quasi laborum nobis sequi officiis quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sed tempore veniam, nostrum minima ipsum mollitia dolore quas at earum corporis nam sunt nobis deserunt quasi aliquam laudantium distinctio voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolorem soluta itaque nisi! Nesciunt voluptatum debitis sequi laudantium assumenda eos, explicabo vel dolor neque, maxime recusandae reiciendis quam delectus maiores.</p>
+            </p>
+            <p>O TÉCNICO EM MEIO AMBIENTE é o profissional que coleta, armazena e interpreta 
+                informações, dados e documentações ambientais. Auxilia na elaboração de laudos, 
+                relatórios e estudos ambientais. Auxilia na elaboração, no acompanhamento e na 
+                execução de sistemas de gestão ambiental. Atua na organização de programas de 
+                educação ambiental, de conservação e de preservação de recursos naturais, de redução, 
+                reuso e reciclagem. Detecta as intervenções ambientais, auxilia na análise de suas 
+                consequências e operacionaliza a execução de ações para preservação, conservação, 
+                otimização, minimização e remediação dos seus efeitos. Identifica e monitora o potencial 
+                poluidor de processos produtivos. Gerencia, monitora e opera os processos de coleta, armazenamento 
+                e análise de dados ambientais em estações de tratamento de efluentes, afluentes e resíduos sólidos. 
+                Procura meios de viabilizar soluções ambientais aos interesses e demandas mercadológicos, identificando 
+                oportunidades de negócios empreendedores, por meio da identificação de tecnologias apropriadas para o 
+                processo de produção racional e cuidados com o meio ambiente.<p>
+            </p>
+            <p> Mercado de trabalho: Instituições públicas; terceiro setor; empresas prestadoras de serviço de 
+                controle ambiental; empresas privadas ou públicas atuantes em Sistemas de Gestão Ambiental; 
+                sistemas de tratamento de água, esgotos e efluentes diversos; prestação de serviço em consultoria 
+                ambiental e gestão de resíduos; unidades de preservação; empresas de pesquisa; parques, jardins 
+                botânicos e empresas florestais; instituições e organizações não governamentais.<p>
         </section>
     </div>
     
