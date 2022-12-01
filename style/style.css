@@ -527,21 +527,29 @@ address p {
 
 /*inicio da fomatacao pagina professores*/
 
+#menu-prof ul li p {
+    color: white;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: flex-start:
+}
+
 #menu-prof ul {
     list-style-type: none;
-    width: 642px;
+    width: 502px;
     height: 990px;
-    background: #998842 no-repeat left bottom;
+    background: #e4a803 no-repeat left bottom;
     position: fixed;
     text-align: center;
-    padding-top: 185px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: 2px solid black;
 }
 
 #menu-prof ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 30px;
-    text-decoration: underline 0.2px #1e56a0;
+    text-decoration: none;
     display: block;
     padding: 0.3em;
     margin-bottom: 3px;
@@ -566,10 +574,12 @@ address p {
     width: 858px;
     height: 880px;
     float: right;
-    background-color: white;
+    background-color: whitesmoke;
     border: 1px solid red;
 
+
 }
+
 
 .text-prof {
     margin-bottom: 180px;

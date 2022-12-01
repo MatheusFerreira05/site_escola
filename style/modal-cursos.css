@@ -22,7 +22,6 @@
 details.infos{
     width: 1000px;
     margin: 15px auto;
-    transition: all 0.4s ease-in-out;
 }
 .competencias details summary {
     color: white;
@@ -32,6 +31,16 @@ details.infos{
     font-size: 24px;
     padding: 1%;
 }
+
+.competencias details[open] summary ~ *{
+    animation: sweep 250ms ease-in-out;
+    animation-duration: 800ms;
+}
+
+@keyframes sweep {
+    from{opacity: 1;}
+    from{opacity: 0;}
+  }
 
 .competencias details summary:hover{
     color: black;
@@ -46,7 +55,7 @@ details.infos{
 
 .grade{
     margin-right: -1px;
-    padding: 30px 12px 90px;
+    padding: 30px 0px 90px;
     display: inline;
 }
 
@@ -89,7 +98,6 @@ details.infos{
     background-color: #fdce4c;
     color: black;
     display: none;
-    position: absolute;
     animation: animate;
     animation-duration: 800ms;
 }
@@ -99,32 +107,12 @@ details.infos{
     from{opacity: 0;}
 }
 
-.fechar,
-.fechar2,
-.fechar3,
-.fechar4,
-.fechar5,
-.fechar6,
-.fechar7,
-.fechar8,
-.fechar9,
-.fechar10,
-.fechar11,
-.fechar12{
-    width: 30px;
-    height: 30px;
-    background-color: brown;
-    border-radius: 30%;
-    text-align: center;
-    padding: auto ;
-    float: right;
-    cursor: pointer;
-}
 
 .fechar img{
     padding-top:8px;
     width: 15px;
     height: 15px;
+    
 }
 
 .btn,
@@ -152,10 +140,10 @@ details.infos{
     text-align: left;
     text-transform: uppercase;
     width: 24.6%;
-    z-index: 2;
-    margin: 20px 20px;
+    margin: 20px 40px;
     width: 250px;
     height: 100px;
+    position: static;
 }
 
 .btn:hover,
@@ -198,6 +186,23 @@ details.infos{
     animation-duration: 800ms;
 }
 
+.modal-info p,
+.modal-info2 p,
+.modal-info3 p,
+.modal-info4 p,
+.modal-info5 p,
+.modal-info6 p,
+.modal-info7 p,
+.modal-info8 p,
+.modal-info9 p,
+.modal-info10 p,
+.modal-info11 p,
+.modal-info12 p{
+    width: 550px;
+    float: left;
+    padding: 20px;
+}
+
 .fechar,
 .fechar2,
 .fechar3,
@@ -212,8 +217,6 @@ details.infos{
 .fechar12{
     width: 30px;
     height: 30px;
-    background-color: brown;
-    border-radius: 50%;
     float: right;
     cursor: pointer;
 }
