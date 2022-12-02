@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
 html {
     margin: 0;
     padding: 0;
@@ -21,9 +23,9 @@ body {
     --cor5: #8CD0F5;
     --cor6: #AD060E;
 
-    --fonte_principal: 'Noto Sans', sans-serif;
-    --font_titulo: 'Noto Sans', sans-serif;
-    --fonte_titulo2: 'Noto Sans', sans-serif;
+    --fonte_principal: inherit;
+    --font_titulo: inherit;
+    --fonte_titulo2: inherit;
 }
 
 .modal {
@@ -177,18 +179,19 @@ main {
 }
 
 h1.tituloHistoria {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Arvo';
     text-align: center;
     color: #e4a803;
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 35px;
     padding-top: 40px;
 }
 
 .historia p {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
     margin: 15px 0px 15px 0px;
     text-align: justify;
+    color: black;
     text-indent: 2px;
     font-size: 1em;
     line-height: 2em;
@@ -197,101 +200,7 @@ h1.tituloHistoria {
 
 /*Fim historia*/
 
-/*Início dos cards*/
-.card a {
-    color: white;
-    border: 1px solid #e4a803;
-    background-color: #e4a803;
-    display: block;
-    border-radius: 0.25em;
-    font-size: 18px;
-}
 
-.card a:hover {
-    color: #e4a803;
-    background-color: white;
-    transition: 0.7s ease all;
-    cursor: pointer;
-}
-
-.text-card {
-    font-family: Noto Sans, sans-serif;
-}
-
-.cursos {
-    height: 450px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-h1.tituloCardCursos {
-    text-align: center;
-    color: #e4a803;
-    font-size: 50px;
-    font-family: Noto Sans, sans-serif;
-    padding-top: 40px;
-}
-
-.card {
-    width: 15%;
-    height: 270px;
-    margin: auto;
-    font-family: arial;
-    background-color: rgb(245, 245, 245);
-    border: 1.5px solid rgb(230, 227, 227);
-    float: left;
-    text-align: center;
-    margin: 25px;
-    margin-top: 60px;
-}
-
-.card:hover {
-    box-shadow: 0 0 1.5em #e4a803;
-    transition: 0.5s;
-}
-
-.card img {
-    height: 100px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card h2 {
-    margin-top: 30px;
-    text-align: center;
-    color: #e4a803;
-    font-size: 15px;
-    padding: 10px;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.card h2:hover {
-    color: black;
-}
-
-.link-card {
-    font-family: Noto Sans, sans-serif;
-    margin: 60px 0px 40px 0px;
-    padding: 5px 8px;
-    width: 92.7%;
-}
-
-
-.link-cardDS {
-    font-family: Noto Sans, sans-serif;
-    margin: 60px 0px 40px 0px;
-    padding: 5px 8px;
-    width: 92.7%;
-}
-
-/*Fim dos cards*/
 
 /*Início da Galeria*/
 
@@ -519,7 +428,7 @@ address {
 
 address p {
     padding-top: 15px;
-    font-family: var(--fonte_titulo2);
+    font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
 
@@ -528,11 +437,15 @@ address p {
 /*inicio da fomatacao pagina professores*/
 
 #menu-prof ul li p {
-    color: white;
+    color: black;
     font-size: 25px;
     margin-top: 25px;
-    text-align: flex-start:
+    border: 0.2px solid black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 8px;
+    
 }
+
 
 #menu-prof ul {
     list-style-type: none;
@@ -547,150 +460,72 @@ address p {
 
 #menu-prof ul li a {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 30px;
+    color: #e4a803;
+    background-color: black;
+    font-size: 25px;
+    margin-top: 43px;
     text-decoration: none;
     display: block;
     padding: 0.3em;
     margin-bottom: 3px;
+    border: 1px solid black;
+    border-radius: 20px;
 
 }
 
+#menu-prof ul li a:hover {
+     transform: scale(0.875);
+     transform-origin: center;
+     transition: transform 200ms ease-in;
+     transition-delay: 50ms;
+     
+}
 #menu-prof ul h2 {
     font-size: 38px;
     color: white;
     ;
 }
 
-#container-prof {
-    background-color: #CCC;
-    border: 1px solid red;
-
-}
-
 #container-conteudo-prof {
     margin-right: 160px;
-    margin-top: 60px;
+    margin-top: 20px;
     width: 858px;
-    height: 880px;
+    height: 950px;
     float: right;
     background-color: whitesmoke;
-    border: 1px solid red;
+    border: 1px solid black;
 
 
 }
 
-
-.text-prof {
-    margin-bottom: 180px;
+.subtit {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+    font-size: 42px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.font-prof {
-    font-size: 25px;
-    padding-bottom: 6px;
+.text-container {
+    font-size: 32px;
+    margin-top: 55px;
+    margin-left: 25px;
 }
 
-
-.his-prof {
-    font-size: 16px;
-
+.text-rel {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
-.his-voltar {
-    font-size: 53px;
-    padding-bottom: 31px;
-}
 
 /*Fim da formatacao da area professores*/
 
-/*Inicio formatacao index dos professores*/
-
-
-.card-prof a {
-
-    color: black;
-    border: 1px solid #e4a803;
-    display: block;
-    border-radius: 0.35em;
-    font-size: 18px;
-}
-
-.card-prof a:hover {
-    color: white;
-    background-color: #4c4c4c;
-    transition: 0.7s ease all;
-    cursor: pointer;
-}
-.img-prof {
-    width: 80px;
-    height: 180px;
-}
-
-.text-card-prof {
-    font-family: Noto Sans, sans-serif;
-}
-
-.professores {
-    height: 450px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-.card-prof {
-    width: 15%;
-    height: 390px;
-    margin: auto;
-    font-family: arial;
-    background-color: rgb(245, 245, 245);
-    border: 1.5px solid rgb(230, 227, 227);
-    float: left;
-    text-align: center;
-    margin: 25px;
-    margin-top: 60px;
-    margin-left: 60px;
-}
-
-.card-prof:hover {
-    box-shadow: 0 0 1.5em #e4a803;
-    transition: 0.5s;
-}
-
-.card-prof img {
-    height: 100px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-prof h2 {
-    margin-top: 6px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.card-prof p {
-    margin-top: 225px;
-    text-align: center;
-    display: inline;
-    font-size: 14px;
-}
-
-
-
-/*fim da formatacao index dos professores*/
 /*Inicio da formatacao da area dos depoimentos*/
 #depoimentos {
     background-color: #ffffff;
     width: auto;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -704,7 +539,7 @@ address p {
 }
 
 .container-dep {
-    width: 20%;
+    width: 250px;
     height: 320px;
     margin: auto;
     font-family: arial;
@@ -715,16 +550,27 @@ address p {
 }
 
 .text-dep {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
+    color: #858585;
     font-size: 15px;
+    text-align: center;
+    line-height: 130%;
+    width: 250px;
+}
+
+p.depoimentos{
+    font-size: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #3d3d3d;
+    text-align: center;
 }
 
 #titulo-dep {
     color: #e4a803;
     padding-top: 50px;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Arvo';
     background-color: #ffffff;
 }
 

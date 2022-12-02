@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +59,7 @@
 .modal-content {
     background-color: #ffffff;
     margin: 5% auto;
-    /* 15% from the top and centered */
+    /* 15% from the top an d centered */
     padding: 10px;
     border: 1px solid #888;
     width: 80%;
@@ -216,7 +218,7 @@ form textarea:focus {
 .parallax-ti p {
     color: black;
     font-size: 20px;
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
     text-align: center;
     text-shadow: 0 1px black;
     padding: 10px;
@@ -266,18 +268,23 @@ form textarea:focus {
     background-image: url('../imagens/cursos/ti.png');
 }
 
+#titleh {
+    font-family: 'Arvo';
+}
+
 .cursos {
+    font-family: 'Source Sans Pro';
     margin: 50px;
 }
 
 #curso {
     padding: 15px;
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
 }
 
 
 .sobre {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
     float: left;
     width: 45%;
     padding: 40px;
@@ -285,7 +292,7 @@ form textarea:focus {
 
 
 .habilidades {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Source Sans Pro';
     float: right;
     width: 40%;
     padding: 40px;
@@ -298,6 +305,7 @@ form textarea:focus {
     width: 90%;
     z-index: 3;
 }
+
 /*rodape*/
 #rodape-info {
     width: 100%;
@@ -333,15 +341,16 @@ form textarea:focus {
     display: flex;
     justify-content: center;
     min-height: 10vh;
-    animation: animate 3s linear infinite;
+    animation: animate 3s linear ;
 }
 
 @keyframes animate {
-    0%{
+    0% {
         filter: hue-rotate(0deg);
 
     }
-    100%{
+
+    100% {
         filter: hue-rotate(05deg);
 
     }
@@ -497,4 +506,23 @@ address p {
     padding-top: 15px;
     font-family: var(--fonte_titulo2);
     color: whitesmoke;
+}
+
+.text-capaz {
+    line-height: 190%;
+    margin-top: 10px;
+    font-size: 18px;
+    
+}
+
+.text-curso {
+    line-height: 170%;
+    margin-top: 10px; 
+    width: 700px;
+    font-size: 16px;
+
+}
+
+.text-curso h2 {
+    font-size: 25px;
 }

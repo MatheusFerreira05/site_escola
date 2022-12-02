@@ -29,104 +29,113 @@
     <! [endif] -->   
 
 
-    <title>Home - Etec de Vila Formosa</title>
+    <title>Desenvolvimento de Sistemas - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
-        <!--Início do Cabeçalho-->
-        <header id="area-cabecalho">
-            
-            <!--Início do Menu-->
-            <nav id="area-menu">
-                <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
-                <ul>
-                    <li><a href="index.html" class="menu-link">Home</a></li>
-                    <li class="dropdown">
-                        <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
-    
-                        <ul>
-                            <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                            <div class="links">
-                            <li><a href="rh.html">Recursos Humanos</a></li>
-                            <li><a href="meioambiente.html">Meio Ambiente</a></li>
-                            <li><a href="info.html">Informática</a></li>
-                            <li><a href="adm.html">Administração</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
-    
-                        <ul>
-                            <li><a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/22.07.23-Regimento-Comum-das-Etecs.pdf" target="_blank" class="dropdown-first">Regimento Comum</a></li>
-                            <div class="links">
-                            <li><a href="">Recursos Humanos</a></li>
-                            <li><a href="">Meio Ambiente</a></li>
-                            <li><a href="">Informática</a></li>
-                            <li><a href="">Administração</a></li>
-                            </div>
-                        </ul>
-    
-                    <li><a href="aluno.html" class="menu-link">Aluno</a></li>
-                    <li style="cursor: pointer">
-                        <a id="myLink" class="menu-link">Fale Conosco</a>
-                        
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal menu-link">
-    
-                            <!-- Modal content -->
-                            <div class="modal-content menu-link">
-                                <span class="close">&times;</span>
-                                <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
-                                    <p>Nome:</p><br />
-                                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
-                                    <p>E-mail:</p><br />
-                                    <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
-                                    <p>Assunto:</p><br />
-                                    <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
-                                    <p>Mensagem:</p> <br>
-                                    <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
-                                    <input type="submit" /><br />
-                                </form>
-                            </div>
-    
+    <!--Início do Cabeçalho-->
+    <header id="area-cabecalho">
+        <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>  
+        <!--Início do Menu-->
+        <nav id="area-menu">
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="#" class="first">Cursos<img src="imagens/seta.png" class="icone"></a>
+                    <ul>
+                        <li><a href="#" class="dropdown-first">MTEC<img src="imagens/direita.png" class="icone"></a>
+                            <ul>
+                                <li><a href="ds.html" class="dropdown-first-link">Desenvolvimento de Sistemas</a></li>  
+                                <div class="links">         
+                                    <li><a href="rh.html">Recursos Humanos</a></li>
+                                    <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                                    <li><a href="info.html">Informática</a></li>
+                                    <li><a href="adm.html">Administração</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li  class="links"><a href="#">EAD<img src="imagens/direita.png" class="icone"></a>
+                            <ul>        
+                                <div class="sub-links"> 
+                                    <li><a href="comercioEAD.html"  class="dropdown-first-sublink">Comércio</a></li>     
+                                    <li><a href="gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                    <li><a href="guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                    <li><a href="secretariadoEAD.html">Secretariado</a></li>
+                                    <li><a href="transImobiEAD.html">Transações Imobiliárias</a></li>
+                                    <li><a href="admEAD.html">Administração</a></li>
+                                    <li><a href="dsEAD.html">Desenvolvimento de sistemas</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li style="cursor: pointer">
+                    <a id="myLink" class="menu-link">Fale Conosco</a>
+                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal menu-link">
+
+                        <!-- Modal content -->
+                        <div class="modal-content menu-link">
+                            <span class="close">&times;</span>
+                            <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                <p>Nome:</p><br />
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                <p>E-mail:</p><br />
+                                <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                <p>Assunto:</p><br />
+                                <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                <p>Mensagem:</p> <br>
+                                <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                                <input type="submit" /><br />
+                            </form>
                         </div>
-                    </li>
-    
-                    <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
-                    <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
-                    <li><a href="login/index.php" class="menu-link">Login</a></li>
-                </ul>
-                <hr class="menu">
-            </nav><!--Fim do Menu-->
-        </header><!--Fim do Cabeçalho-->
+                    </div>
+                </li>
+                <script src="js/modal.js"></script>
+
+                <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
+                <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                <li><a href="login/index.php" class="menu-link">Login</a></li>
+            </ul>
+            
+        </nav><!--Fim do Menu-->
+        
+    </header><!--Fim do Cabeçalho-->
 
 <main>
     <section class="parallax-ds">
         <h1>Desenvolvimento de Sistemas (M-Tec)</h1>
-        <p>Full Stack,Apps & Banco de dados</p>
-        <p>Curso Técnico</p>
+        <p>Full Stack, Apps & Banco de dados</p>
+        <p>Curso Técnico integrado com o Ensino Médio</p>
     </section>
     
     <div class="cursos">
         <section class="sobre">
-            <h2 id="curso">O Curso</h2>
-            <p>Nesta modalidade de ensino, baseada na Lei nº 13.415/17, o aluno cursará o 
+            <b><h2 id="titleh">O Ensino médio</h2></b>
+            <p class="text-curso">Nesta modalidade de ensino, baseada na Lei nº 13.415/17, o aluno cursará o 
             Ensino Médio estruturado em conjunto com a formação de Técnico em Desenvolvimento, 
             numa jornada de até 30 aulas semanais (até 6 aulas diárias), em cada uma das 3 séries. 
             Ao final do curso, o aluno terá concluído o Ensino Médio e obterá, também, o diploma de 
             Técnico em Desenvolvimento de Sistemas, com validade nacional.<p>
+            </p><br><br>
+            <h2 id="titleh">O Curso</h2>
+            <p class="text-curso">
+                <b>O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS</b> é o profissional que analisa e projeta sistemas. 
+                    Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de 
+                    desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.
             </p>
-            <p>Eixo Tecnológico: Informação e Comunicação.<p>
+            <p class="text-curso"><b>Eixo Tecnológico: </b> Informação e Comunicação</p>
         </section>
 
         <section class="habilidades">
-            <h2 id="curso">Você será capaz de:</h2>
-            <p>O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS é o profissional que analisa e projeta sistemas. 
-                Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de 
-                desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.</p>
-                
-            <p>Mercado de trabalho: Empresas e departamentos de desenvolvimento de sistemas em organizações governamentais 
-                e não governamentais, podendo também atuar como profissional autônomo.</p>
+            <h2 id="titleh">Você será capaz de:</h2>
+
+            <p class="text-capaz" > • Criar aplicativos;</p>
+            <p class="text-capaz"> • Desenvolver sistemas;</p>
+            <p class="text-capaz"> • Gerenciar softwares;</p>
+            <p class="text-capaz"> • Organizar projetos;</p>
+            <p class="text-capaz"> • Efetuar o planejamento estratégico;</p>
         </section>
     </div>
 
@@ -140,7 +149,7 @@
                     <div class="grade">
                         <button  onclick="acao()" class="btn">
                             <span class="grade-span">
-                                Programação Mobile
+                                <p class="span">Programação Mobile</p>
                             </span>
                         </button>
                             <div class="modal-info">
@@ -150,7 +159,7 @@
                             </div>
                         <button  onclick="acao2()" class="btn2">
                             <span class="grade-span">
-                                Programação web
+                                <p class="span">Programação web</p>
                             </span>
                         </button>
                             <div class="modal-info2">
@@ -159,7 +168,7 @@
                             </div>
                         <button  onclick="acao3()" class="btn3">
                             <span class="grade-span">
-                                FUNDAMENTOS da Informática
+                                <p class="span">FUNDAMENTOS da Informática</p>
                             </span>
                         </button>
                             <div class="modal-info3">
@@ -169,7 +178,7 @@
 
                         <button  onclick="acao4()" class="btn4">
                             <span class="grade-span">
-                                APS
+                                <p class="span">APS</p>
                             </span>
                         </button>
                             <div class="modal-info4">
@@ -179,7 +188,7 @@
 
                         <button  onclick="acao5()" class="btn5">
                             <span class="grade-span">
-                                APS
+                                <p class="span">APS</p>
                             </span>
                         </button>
                             <div class="modal-info5">
@@ -189,7 +198,7 @@
 
                         <button  onclick="acao4()" class="btn4">
                             <span class="grade-span">
-                                APS
+                                <p class="span">APS</p>
                             </span>
                         </button>
                             <div class="modal-info4">
@@ -203,7 +212,7 @@
                         <div class="grade">
                             <button  onclick="acao7()" class="btn7">
                                 <span class="grade-span">
-                                    APS
+                                    <p class="span">APS</p>
                                 </span>
                             </button>
                                 <div class="modal-info7">
@@ -212,7 +221,7 @@
                                 </div>
                             <button  onclick="acao8()" class="btn8">
                                 <span class="grade-span">
-                                    APS
+                                    <p class="span">APS</p>
                                 </span>
                             </button>
                                 <div class="modal-info8">
@@ -221,7 +230,7 @@
                                 </div>
                                 <button  onclick="acao9()" class="btn9">
                                     <span class="grade-span">
-                                        APS
+                                        <p class="span">APS</p>
                                     </span>
                                 </button>
                                     <div class="modal-info9">
@@ -230,7 +239,7 @@
                                     </div>
                                     <button  onclick="acao10()" class="btn10">
                                         <span class="grade-span">
-                                            APS
+                                            <p class="span">APS</p>
                                         </span>
                                     </button>
                                         <div class="modal-info10">
@@ -239,7 +248,7 @@
                                         </div>
                                         <button  onclick="acao11()" class="btn11">
                                             <span class="grade-span">
-                                                APS
+                                                <p class="span">APS</p>
                                             </span>
                                         </button>
                                             <div class="modal-info11">
@@ -248,7 +257,7 @@
                                             </div>
                                             <button  onclick="acao12()" class="btn12">
                                                 <span class="grade-span">
-                                                    APS
+                                                    <p class="span">APS</p>
                                                 </span>
                                             </button>
                                                 <div class="modal-info12">

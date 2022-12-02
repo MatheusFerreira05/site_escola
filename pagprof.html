@@ -10,6 +10,7 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/cursos.css">
+     <link rel="stylesheet" href="style/card.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -25,43 +26,46 @@
 
 
 
-    <title>Home - Etec de Vila Formosa</title>
+    <title>Página Coordenadores - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
     <!--Início do Cabeçalho-->
     <header id="area-cabecalho">
+        <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>  
         <!--Início do Menu-->
         <nav id="area-menu">
-            <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
             <ul>
                 <li><a href="index.html" class="menu-link">Home</a></li>
-                <li class="dropdown">
-                    <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
-
+                <li><a href="#" class="first">Cursos<img src="imagens/seta.png" class="icone"></a>
                     <ul>
-                        <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                        <div class="links">
-                        <li><a href="rh.html">Recursos Humanos</a></li>
-                        <li><a href="meioambiente.html">Meio Ambiente</a></li>
-                        <li><a href="info.html">Informática</a></li>
-                        <li><a href="adm.html">Administração</a></li>
-                        </div>
+                        <li><a href="#" class="dropdown-first">MTEC<img src="imagens/direita.png" class="icone"></a>
+                            <ul>
+                                <li><a href="ds.html" class="dropdown-first-link">Desenvolvimento de Sistemas</a></li>  
+                                <div class="links">         
+                                    <li><a href="rh.html">Recursos Humanos</a></li>
+                                    <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                                    <li><a href="info.html">Informática</a></li>
+                                    <li><a href="adm.html">Administração</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li  class="links"><a href="#">EAD<img src="imagens/direita.png" class="icone"></a>
+                            <ul>        
+                                <div class="sub-links"> 
+                                    <li><a href="comercioEAD.html"  class="dropdown-first-sublink">Comércio</a></li>     
+                                    <li><a href="gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                    <li><a href="guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                    <li><a href="secretariadoEAD.html">Secretariado</a></li>
+                                    <li><a href="transImobiEAD.html">Transações Imobiliárias</a></li>
+                                    <li><a href="admEAD.html">Administracao</a></li>
+                                    <li><a href="dsEAD.html">Desenvolvimento de sistemas</a></li>
+                                </div>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
 
-                    <ul>
-                        <li><a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/22.07.23-Regimento-Comum-das-Etecs.pdf" target="_blank" class="dropdown-first">Regimento Comum</a></li>
-                        <div class="links">
-                        <li><a href="">Recursos Humanos</a></li>
-                        <li><a href="">Meio Ambiente</a></li>
-                        <li><a href="">Informática</a></li>
-                        <li><a href="">Administração</a></li>
-                        </div>
-                    </ul>
-
-                <li><a href="aluno.html" class="menu-link">Aluno</a></li>
                 <li style="cursor: pointer">
                     <a id="myLink" class="menu-link">Fale Conosco</a>
                     
@@ -91,114 +95,133 @@
                 <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
                 <li><a href="login/index.php" class="menu-link">Login</a></li>
             </ul>
-            <hr class="menu">
+            
         </nav><!--Fim do Menu-->
+        
     </header><!--Fim do Cabeçalho-->
 
      <section class="parallax-prof">
-        <h1>Professores</h1><br>
-        <p>"Ser professor é ser um condutor de almas e sonhos. É lapidar diamantes"</p>
+        <h1>Direção e Coordenação</h1><br>
+        <p>"A educação exige os maiores cuidados, pois tem influência sobre todas as vidas"</p>
      </section>
 
     <!--Início dos cards-->
 
-    <section id="professores">
-
-        <!--Início card 1-->
-      <section class="card-prof">
-            <a href="professores.html"><img src="imagens/anderson.PNG" alt="" style="height: 295px;"></a>
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 1-->
-
-        <!--Início card 2-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 2-->
-
-        <!--Início card 3-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 3-->
-
-        <!--Início card 4-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 4-->
-
-        <!--Início card 5-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 5-->
-
-
-        <!--Início card 6-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 6-->
-
-        <!--Início card 7-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 7-->
-
-        <!--Início card 8-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 8-->
-
-        <!--Início card 9-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 9-->
-
-        <!--Início card 10-->
-        <section class="card-prof">
-            <img src="imagens/anderson.PNG" alt="" style="height: 295px;">
-            <h2 class="text-card-prof">Anderson Buzato</h2>
-            <p>Professor de Português</p>
-           
-        </section>
-        <!--Fim card 10-->
-
-       
-
-    
+    <section id="coordenacao"><!--Fileira 1-->
  
+      <div class="card-prof"><!--  Inicio card 1 -->
+        <div class="card-image1-prof"><img src="imagens/anderson.PNG"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+        <div class="card-text-prof">
+          <h2 style="margin-top: 52px; font-size: 28px;">Anderson<br> Buzato</h2>
+          <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Coordenador pedagógico </p><br>
+          <a href="professores.html" class="link-card-prof">Sobre</a>
+        </div>
+ 
+      </div><!-- Fim card 1 -->
+
+      <div class="card-prof"><!--  Inicio card 2 -->
+        <div class="card-image2-prof"><img src="imagens/rode.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+        <div class="card-text-prof">
+          <h2 style="margin-top: 52px; font-size: 28px;">Rodineha Candido</h2>
+          <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Coordenadora pedagógica</p><br>
+          <a href="professores.html" class="link-card-prof">Sobre</a>
+        </div>
+ 
+      </div><!-- Fim card 2 -->
+
+      <div class="card-prof"><!--  Inicio card 3 -->
+        <div class="card-image3-prof"><img src="imagens/grazi.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+        <div class="card-text-prof">
+          <h2 style="margin-top: 52px; font-size: 28px;">Graziela<br>Santos</h2>
+          <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Diretora</p><br>
+          <a href="professores.html" class="link-card-prof">Sobre</a>
+        </div>
+ 
+      </div><!-- Fim card 3 -->
+
+      <div class="card-prof"><!--  Inicio card 4 -->
+        <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+        <div class="card-text-prof">
+          <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+          <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+          <a href="professores.html" class="link-card-prof">Sobre</a>
+        </div>
+ 
+      </div><!-- Fim card 4 -->
+
+      
+      <div class="card-prof"><!--  Inicio card 5 -->
+        <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+        <div class="card-text-prof">
+          <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+          <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+          <a href="professores.html" class="link-card-prof">Sobre</a>
+        </div>
+ 
+      </div><!-- Fim card 5 --><br><br>
+
+      
+
+  </section><!-- Fim da Fileira 1-->
+
+  <section id="coordenacao"><!--Fileira 2-->
+
+  <div class="card-prof"><!--  Inicio card 6 -->
+    <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+    <div class="card-text-prof">
+      <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+      <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+      <a href="professores.html" class="link-card-prof">Sobre</a>
+    </div>
+
+  </div><!-- Fim card 6 -->
+
+  <div class="card-prof"><!--  Inicio card 7 -->
+    <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+    <div class="card-text-prof">
+      <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+      <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+      <a href="professores.html" class="link-card-prof">Sobre</a>
+    </div>
+
+  </div><!-- Fim card 7 -->
+
+
+  <div class="card-prof"><!--  Inicio card 8 -->
+    <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+    <div class="card-text-prof">
+      <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+      <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+      <a href="professores.html" class="link-card-prof">Sobre</a>
+    </div>
+
+  </div><!-- Fim card 8 -->
+
+
+  <div class="card-prof"><!--  Inicio card 9 -->
+    <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+    <div class="card-text-prof">
+      <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+      <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+      <a href="professores.html" class="link-card-prof">Sobre</a>
+    </div>
+
+  </div><!-- Fim card 9-->
+
+
+  <div class="card-prof"><!--  Inicio card 10 -->
+    <div class="card-image4-prof"><img src="imagens/laade.jpg"  style="width: 150px; height: 150px; margin-top: 125px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+    <div class="card-text-prof">
+      <h2 style="margin-top: 52px; font-size: 28px;">Laade<br>Antonio</h2>
+      <p style="margin-top: 20px; font-size: 18px; margin-bottom: 40px;">Assessor da coordenação </p><br>
+      <a href="professores.html" class="link-card-prof">Sobre</a>
+    </div>
+
+  </div><!-- Fim card 10 -->
+
+</section><!--Fim da fileira 2-->
+
+
     
     <section id="rodape-info">
         <img src="imagens/logorodape.png" class="logo-rodape" style="width: 90px; height: 90px;">

@@ -10,6 +10,9 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/style.css">
 
+     <!--Card CSS-->
+     <link rel="stylesheet" href="style/card.css">
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -26,77 +29,89 @@
     <title>Home - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
-    <!--Início do Cabeçalho-->
-    <header id="area-cabecalho">
+        <!--Início do Cabeçalho-->
+        <header id="area-cabecalho">
+            <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>  
+            <!--Início do Menu-->
+            <nav id="area-menu">
+                <ul>
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="#" class="first">Cursos<img src="imagens/seta.png" class="icone"></a>
+                        <ul>
+                            <li><a href="#" class="dropdown-first">MTEC<img src="imagens/direita.png" class="icone"></a>
+                                <ul>
+                                    <li><a href="ds.html" class="dropdown-first-link">Desenvolvimento de Sistemas</a></li>  
+                                    <div class="links">         
+                                        <li><a href="rh.html">Recursos Humanos</a></li>
+                                        <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                                        <li><a href="info.html">Informática</a></li>
+                                        <li><a href="adm.html">Administração</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+    
+                            <li  class="links"><a href="#">EAD<img src="imagens/direita.png" class="icone"></a>
+                                <ul>        
+                                    <div class="sub-links"> 
+                                        <li><a href="comercioEAD.html"  class="dropdown-first-sublink">Comércio</a></li>     
+                                        <li><a href="gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                        <li><a href="guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                        <li><a href="secretariadoEAD.html">Secretariado</a></li>
+                                        <li><a href="transImobiEAD.html">Transações Imobiliárias</a></li>
+                                        <li><a href="admEAD.html">Administracao</a></li>
+                                        <li><a href="dsEAD.html">Desenvolvimento de sistemas</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li style="cursor: pointer">
+                        <a id="myLink" class="menu-link">Fale Conosco</a>
+                        
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal menu-link">
+    
+                            <!-- Modal content -->
+                            <div class="modal-content menu-link">
+                                <span class="close">&times;</span>
+                                <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                    <p>Nome:</p><br />
+                                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                    <p>E-mail:</p><br />
+                                    <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                    <p>Assunto:</p><br />
+                                    <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                    <p>Mensagem:</p> <br>
+                                    <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                                    <input type="submit" /><br />
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <script src="js/modal.js"></script>
+    
+                    <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
+                    <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                    <li><a href="login/index.php" class="menu-link">Login</a></li>
+                </ul>
+                
+            </nav><!--Fim do Menu-->
             
-        <!--Início do Menu-->
-        <nav id="area-menu">
-            <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
-            <ul>
-                <li><a href="index.html" class="menu-link">Home</a></li>
-
-                <li class="dropdown">
-                    <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>   
-                    <ul class="dropdown"> 
-                        <li><a href="#" class="menu-link">MTEC<img src="imagens/direita.png" class="icone"></a></li>
-                        <li><a href="#" class="menu-link">EAD<img src="imagens/direita.png" class="icone"></a></li>
-                        <li class="dropdown"></li>
-                    </ul>
-                </li>
-                                             
-                    <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
-                    <ul>
-                        <li><a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/22.07.23-Regimento-Comum-das-Etecs.pdf" target="_blank" class="dropdown-first">Regimento Comum</a></li>
-                        <div class="links">
-                        <li><a href="">Recursos Humanos</a></li>
-                        <li><a href="">Meio Ambiente</a></li>
-                        <li><a href="">Informática</a></li>
-                        <li><a href="">Administração</a></li>
-                        </div>
-                    </ul>
-
-                <li><a href="aluno.html" class="menu-link">Aluno</a></li>
-                <li style="cursor: pointer">
-                    <a id="myLink" class="menu-link">Fale Conosco</a>
-                    
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal menu-link">
-
-                        <!-- Modal content -->
-                        <div class="modal-content menu-link">
-                            <span class="close">&times;</span>
-                            <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
-                                <p>Nome:</p><br />
-                                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
-                                <p>E-mail:</p><br />
-                                <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
-                                <p>Assunto:</p><br />
-                                <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
-                                <p>Mensagem:</p> <br>
-                                <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
-                                <input type="submit" /><br />
-                            </form>
-                        </div>
-
-                    </div>
-                </li>
-                <script src="js/modal.js"></script>
-
-                <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
-                <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
-                <li><a href="login/index.php" class="menu-link">Login</a></li>
-            </ul>
-            <hr class="menu">
-        </nav><!--Fim do Menu-->
-    </header><!--Fim do Cabeçalho-->
+        </header><!--Fim do Cabeçalho-->
+        
     <!--Início Carousel-->
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true}'>
         <div class="carousel-cell">
-            <img class="fotos" src="imagens/escola01.jpg" />
+            <img class="fotos" src="imagens/imagem1.png" />
         </div>
 
         <div class="carousel-cell">
-            <img class="fotos" src="imagens/escola02.jpg" />
+            <img class="fotos" src="imagens/imagem4.png" />
+        </div>
+
+        <div class="carousel-cell">
+            <img class="fotos" src="imagens/imagem5.png" />
         </div>
     </div>
     <!--Fim Carousel-->
@@ -121,58 +136,142 @@
                     facere saepe vel dolor placeat quasi voluptates, repellendus nostrum esse molestiae!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis delectus numquam quidem ratione modi eaque exercitationem nihil ducimus,
                     facere saepe vel dolor placeat quasi voluptates, repellendus nostrum esse molestiae!
                 </p>
-
-
+              
                 
         </section>
 
-        <!--Início dos cards-->
-        <h1 class="tituloCardCursos">Nossos Cursos</h1>
+         <!--Início dos cards-->
+         <h1 class="tit-card">Nossos Cursos</h1>
 
-        <section class="cursos">
-
-            <!--Início card 1-->
-            <section class="card">
-                <img src="cursos/imagens/adm2.jpg" alt="">
-                <h2 class="text-card">Administração</h2>
-                <a href="adm.html" class="link-card">Saiba Mais</a>
-            </section>
-            <!--Fim card 1-->
-
-            <!--Início card 2-->
-            <section class="card">
-                <img src="cursos/imagens/ds2.jpg" alt="">
-                <h2 class="text-card">Desenvolvimento de Sistemas</h2>
-                <a href="ds.html" class="link-cardDS">Saiba Mais</a>
-            </section>
-            <!--Fim card 2-->
-
-            <!--Início card 3-->
-            <section class="card">
-                <img src="cursos/imagens/info2.jpg" alt="">
-                <h2 class="text-card">Informática</h2>
-                <a href="info.html" class="link-card">Saiba Mais</a>
-            </section>
-            <!--Fim card 3-->
-
-            <!--Início card 4-->
-            <section class="card">
-                <img src="cursos/imagens/meio ambiente2.jpg" alt="">
-                <h2 class="text-card">Meio Ambiente</h2>
-                <a href="adm.html" class="link-card">Saiba Mais</a>
-            </section>
-            <!--Fim card 4-->
-
-            <!--Início card 5-->
-            <section class="card">
-                <img src="cursos/imagens/rh2.jpg" alt="">
-                <h2 class="text-card">Recursos Humanos</h2>
-                <a href="adm.html" class="link-card">Saiba Mais</a>
-            </section>
-            <!--Fim card 5-->
-
-        </section>
-        <!--Fim dos cards-->
+         <section id="cursos">
+ 
+            <div class="card"><!--  Inicio card 1 -->
+       <div class="card-image1"></div>
+       <div class="card-text">
+         <span class="date">EaD/M-Tec</span>
+         <h2 style="margin-top: 12px;">Informática</h2>
+         <p style="margin-top: 10px;">Aprenda a entender os hardwares, montar computadores, fazer manutenção.</p><br>
+         <a href="ds.html" class="link-card">Ler mais</a>
+       </div>
+       <div class="card-stats">
+         <div class="stat">
+           <div class="value">2</div>
+           <div class="type">modalidades</div>
+         </div>
+         <div class="stat border">
+           <div class="value">1000</div>
+           <div class="type">horas/aulas</div>
+         </div>
+         <div class="stat">
+           <div class="value">7</div>
+           <div class="type">matérias</div>
+         </div>
+       </div>
+     </div><!-- Fim card 1 -->
+ 
+     <div class="card"><!--  Inicio card 2 -->
+       <div class="card-image2"></div>
+       <div class="card-text">
+         <span class="date">M-Tec</span>
+         <h2 style="margin-top: 12px;">Meio Ambiente</h2>
+         <p style="margin-top: 10px;">Criar relatórios, desenvolver pesquisas, fazer novas descobertas, analisar dados ambientais e melhorar a natureza</p><br>
+         <a href="meioambiente.html" class="link-card">Ler mais</a>
+       </div>
+       <div class="card-stats">
+         <div class="stat">
+           <div class="value">1</div>
+           <div class="type">modalidade</div>
+         </div>
+         <div class="stat border">
+           <div class="value">500</div>
+           <div class="type">horas/aulas</div>
+         </div>
+         <div class="stat">
+           <div class="value">4</div>
+           <div class="type">matérias</div>
+         </div>
+       </div>
+     </div><!-- Fim card 2 -->
+ 
+     <div class="card"><!--  Inicio card 3 -->
+       <div class="card-image3"></div>
+       <div class="card-text">
+         <span class="date">EaD</span>
+         <h2 style="margin-top: 12px;">Guia de Turismo</h2>
+         <p style="margin-top: 10px;">Conhecer novos lugares, criar roteiros de viagens, levar pessoas para aventuras e momentos Inesquecíveis.</p><br>
+         <a href="guiaTurismoEAD.html" class="link-card">Ler mais</a>
+       </div>
+       <div class="card-stats">
+         <div class="stat">
+           <div class="value">1</div>
+           <div class="type">modalidade</div>
+         </div>
+         <div class="stat border">
+           <div class="value">500</div>
+           <div class="type">horas/aulas</div>
+         </div>
+         <div class="stat">
+           <div class="value">4</div>
+           <div class="type">matérias</div>
+         </div>
+       </div>
+     </div><!-- Fim card 3 -->
+ 
+     <div class="card"><!--  Inicio card 4 -->
+       <div class="card-image4"></div>
+       <div class="card-text">
+         <span class="date">EaD/M-Tec</span>
+         <h2 style="margin-top: 12px;">Administração</h2>
+         <p style="margin-top: 10px;">Administrar projetos, cuidar da contabilidade, gerenciar equipes, fazer estratégias de marketing</p><br>
+         <a href="adm.html" class="link-card">Ler mais</a>
+       </div>
+       <div class="card-stats">
+         <div class="stat">
+           <div class="value">2</div>
+           <div class="type">modalidades</div>
+         </div>
+         <div class="stat border">
+           <div class="value">1000</div>
+           <div class="type">horas/aulas</div>
+         </div>
+         <div class="stat">
+           <div class="value">9</div>
+           <div class="type">matérias</div>
+         </div>
+       </div>
+     </div><!-- Fim card 4 -->
+ 
+     <div class="card"><!--  Inicio card 5 -->
+       <div class="card-image5"></div>
+       <div class="card-text">
+         <span class="date">EaD</span>
+         <h2 style="margin-top: 12px;">Comércio</h2>
+         <p style="margin-top: 10px;">Aprenda a negociar, fazer importações e exportações de produtos internacionais</p><br>
+         <a href="transImobiEAD.html" class="link-card">Ler mais</a>
+       </div>
+       <div class="card-stats">
+         <div class="stat">
+           <div class="value">2</div>
+           <div class="type">modalidades</div>
+         </div>
+         <div class="stat border">
+           <div class="value">500</div>
+           <div class="type">horas/aulas</div>
+         </div>
+         <div class="stat">
+           <div class="value">5</div>
+           <div class="type">matérias</div>
+         </div>
+       </div>
+     </div><!-- Fim card 5 -->
+ 
+ 
+ 
+          
+     </div><!-- Fim card 1 -->
+ 
+         </section>
+         <!--Fim dos cards-->
         <hr class="depoimentos">
 
         <h1 id="titulo-dep">Mensagens dos Formandos</h1>
@@ -181,87 +280,110 @@
             <!--Início dos depoimentos-->
             
             <div class="container-dep">
-                <center>
+                
 
-                <img src=../imagens/leo.png alt="" class="img-dep">
+                <img src=imagens/leo.png alt="" class="img-dep">
                 
                 <p class="text-dep">
                     <i>
-                        “Durante os poucos anos em que<br> estudei na Etec
-                        fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
-                        ca-<br>ção dos professores que sempre me<br> apoiaram e
-                        ajudaram durante minhas<br> lutas. Eu não teria chegado na USP<br> sem a assistência dedicada
-                        de todos<br> os professores e meus colegas de clas-<br>se da EVF.”
+                        “Derrotado não é quem passa horas estudando, mas quem percebe que desperdiçou seu tempo sem adquirir conhecimento.”
+
                     </i>
                 </p><br>
 
-                <p style="font-size: 20px; font-family: Bradley Hand, cursive;">Leo, Cria da EVF</p>
+                <p class="depoimentos">Léo, Aluno da EVF</p>
 
-                </center>
+                
             </div>
 
             <div class="container-dep">
-                <center>
+                
 
-                <img src=../imagens/bianca.png alt="" class="img-dep">
+                <img src=imagens/bianca.png alt="" class="img-dep">
                 
                 <p class="text-dep">
                     <i>
-                        “Durante os poucos anos em que<br> estudei na Etec
-                        fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
-                        ca-<br>ção dos professores que sempre me<br> apoiaram e
-                        ajudaram durante minhas<br> lutas. Eu não teria chega
-                        do na USP<br> sem a assistência dedicada
-                        de todos<br> os professores e meus colegas de clas-<br>se da EVF.”
+                        “Para ganhar conhecimento, adicione coisas todos os dias. Para ganhar sabedoria, elimine coisas todos os dias.”
                     </i>
                 </p><br>
 
-                <p style="font-size: 20px; font-family: Bradley Hand, cursive;">Bianca, Cria da EVF</p>
+                <p class="depoimentos">Bianca, Aluna da EVF</p>
 
-                </center>
+               
             </div>
 
             <div class="container-dep">
-                <center>
+                
 
-                <img src=../imagens/kaua.png alt="" class="img-dep">
+                <img src=imagens/kaua.png alt="" class="img-dep">
                 
                 <p class="text-dep">
                     <i>
-                        “Durante os poucos anos em que<br> estudei na Etec
-                        fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
-                        ca-<br>ção dos professores que sempre me<br> apoiaram e
-                        ajudaram durante minhas<br> lutas. Eu não teria chega
-                        do na USP<br> sem a assistência dedicada
-                        de todos<br> os professores e meus colegas de clas-<br>se da EVF.”
+                        “Estudar é um direito, mas poucos possuem o privilégio
+                         de só fazer isso. Faça valer a pena
+                        e se dedique ao máximo!”
                     </i>
                 </p><br>
 
-                <p style="font-size: 20px; font-family: Bradley Hand, cursive;">Kauã, Cria da EVF</p>
+                <p class="depoimentos">Kauã, Aluno da EVF</p>
 
-                </center>
+                
             </div>
 
             <div class="container-dep">
-                <center>
+              
 
-                    <img src=../imagens/free.png alt="" class="img-dep">
+                    <img src=imagens/fusco.jpg alt="" class="img-dep">
                     
                     <p class="text-dep">
                         <i>
-                            “Durante os poucos anos em que<br> estudei na Etec
-                            fui nutrido pelo óti-<br>mo sistema escolar e pela dedi
-                            ca-<br>ção dos professores que sempre me<br> apoiaram e
-                            ajudaram durante minhas<br> lutas. Eu não teria chega
-                            do na USP<br> sem a assistência dedicada
-                            de todos<br> os professores e meus colegas de clas-<br>se da EVF.”
+                            “Estudar abre portas que ultrapassam o conhecimento e trazem
+                             resultados que podemos ver e segurar
+                              com as nossas mãos.”
                         </i>
                     </p><br>
 
-                    <p style="font-size: 20px; font-family: Bradley Hand, cursive;">Freefa, Cria da EVF</p>
+                    <p class="depoimentos">Victor, Aluno da EVF</p>
                     
-                </center>
+               
             </div>
+
+            <div class="container-dep">
+                
+
+                    <img src=imagens/math.jpg alt="" class="img-dep">
+                            
+                    <p class="text-dep">
+                        <i>
+                            “Um dos nossos maiores erros é nos compararmos 
+                            com as outras pessoas. Faça o que você 
+                             pode e procure melhorar sempre.”
+                        </i>
+                    </p><br>
+
+                    <p class="depoimentos">Matheus, Aluno da EVF</p>
+                    
+                
+            </div>
+
+            <div class="container-dep">
+                
+
+                    <img src=imagens/free.png alt="" class="img-dep">
+                    
+                    <p class="text-dep">
+                        <i>
+                            “Falhar em uma prova não quer dizer que você não é capaz. levante-se ainda maior e estude
+                              mais para atingir seus objetivos.”
+                        </i>
+                    </p><br>
+
+                    <p class="depoimentos">Éric, Aluno da EVF</p>
+                    
+                
+            </div>
+
+           
             
         </section>
         <hr class="depoimentos">
@@ -272,7 +394,7 @@
         <section class="galeria">
 
             <div class="imagens-galeria">
-                <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/5bee82bdb2c15d3f89241fb013b8bd4c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+              <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/59f146259e655b0093844c6c752afba7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
             </div>
         </section>
         <!--Fim da galeria-->

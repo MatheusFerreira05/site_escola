@@ -13,7 +13,10 @@
     <!--Style CSS-->
     <link rel="stylesheet" href="style/cursos.css">
 
-    <!-- Fonts -->
+    <!--MODAL CURSOS-->
+    <link rel="stylesheet" href="style/modal-cursos.css">
+
+    <!--Fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
 
@@ -26,230 +29,243 @@
     <! [endif] -->   
 
 
-    <title>Home - Etec de Vila Formosa</title>
+    <title>Administração EaD - Etec de Vila Formosa</title>
 </head>
 <body class="no-js">
-    <header id="area-cabecalho"><!--Início do Cabeçalho-->
-
-        <a id="area-logo" href="index.html" ><img id="area-logo" src="imagens/logoevf.png" alt=""></a>
-    <hr id="menu">
-         <!--Início do Menu-->
-            <nav id="area-menu">
-                <ul>
-                    <li><a href="index.html" class="menu-link">Home</a></li>
-                    
-                    <li class="dropdown">
-                        <a href="" class="menu-link">Cursos<img src="imagens/seta.png" class="icone"></a>
-                        
-                        <ul>
-                            <li><a href="ds.html" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                            <div class="links">                     
-                                <li><a href="rh.html">Recursos Humanos</a></li>
-                                <li><a href="meioambiente.html">Meio Ambiente</a></li>
-                                <li><a href="info.html">Informática</a></li>
-                                <li><a href="adm.html">Administração</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="menu-link">Institucional<img src="imagens/seta.png" class="icone"></a>
-                        
-                        <ul>
-                                <li><a href="" class="dropdown-first">Desenvolvimento de Sistemas</a></li>
-                                <div class="links">
-                                    <li><a href="">Recursos Humanos</a></li>
-                                    <li><a href="">Meio Ambiente</a></li>
-                                    <li><a href="">Informática</a></li>
-                                    <li><a href="">Administração</a></li>
+    <!--Início do Cabeçalho-->
+    <header id="area-cabecalho">
+        <a id="area-logo" href="index.html"><img id="area-logo" src="imagens/logoevf.png" alt=""></a>  
+        <!--Início do Menu-->
+        <nav id="area-menu">
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="#" class="first">Cursos<img src="imagens/seta.png" class="icone"></a>
+                    <ul>
+                        <li><a href="#" class="dropdown-first">MTEC<img src="imagens/direita.png" class="icone"></a>
+                            <ul>
+                                <li><a href="ds.html" class="dropdown-first-link">Desenvolvimento de Sistemas</a></li>  
+                                <div class="links">         
+                                    <li><a href="rh.html">Recursos Humanos</a></li>
+                                    <li><a href="meioambiente.html">Meio Ambiente</a></li>
+                                    <li><a href="info.html">Informática</a></li>
+                                    <li><a href="adm.html">Administração</a></li>
                                 </div>
-                        </ul>
-                        <li style="cursor: pointer">
-                            <a id="myLink" class="menu-link">Fale Conosco</a>
-        
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal menu-link">
-        
-                                <!-- Modal content -->
-                                <div class="modal-content menu-link">
-                                    <span class="close">&times;</span>
-                                    <h2 id="fale-conosco">Fale Conosco</h2>
-                                    <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
-                                        <p>Nome:</p><br />
-                                        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
-                                        <p>E-mail:</p><br />
-                                        <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
-                                        <p>Assunto:</p><br />
-                                        <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
-                                        <p>Mensagem:</p> <br>
-                                        <textarea name="mensagem" id="mensagem" cols="15" rows="3" placeholder="Digite sua mensagem"></textarea><br />
-                                        <input type="submit" /><br />
-                                    </form>
-                                </div>
-        
-                            </div>
+                            </ul>
                         </li>
-                        
-                            <script>
-                              var modal = document.getElementById("myModal");
-                        
-                              // Get the button that opens the modal
-                              var link = document.getElementById("myLink");
-                        
-                              // Get the <span> element that closes the modal
-                              var span = document.getElementsByClassName("close")[0];
-                        
-                              // When the user clicks on the button, open the modal
-                              link.onclick = function() {
-                                modal.style.display = "block";
-                              }
-                        
-                              // When the user clicks on <span> (x), close the modal
-                              span.onclick = function() {
-                                modal.style.display = "none";
-                              }
-                        
-                              // When the user clicks anywhere outside of the modal, close it
-                              window.onclick = function(event) {
-                                if (event.target == modal) {
-                                  modal.style.display = "none";
-                                }
-                              }
-                        </script>
 
-                        <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
-                        <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
-                    </li>
-                </ul>
-            </nav><!--Fim do Menu-->
-</header><!--Fim do Cabeçalho-->
+                        <li  class="links"><a href="#">EAD<img src="imagens/direita.png" class="icone"></a>
+                            <ul>        
+                                <div class="sub-links"> 
+                                    <li><a href="comercioEAD.html"  class="dropdown-first-sublink">Comércio</a></li>     
+                                    <li><a href="gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                    <li><a href="guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                    <li><a href="secretariadoEAD.html">Secretariado</a></li>
+                                    <li><a href="transImobiEAD.html">Transações Imobiliárias</a></li>
+                                    <li><a href="admEAD.html">Administração</a></li>
+                                    <li><a href="dsEAD.html">Desenvolvimento de sistemas</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
+                <li style="cursor: pointer">
+                    <a id="myLink" class="menu-link">Fale Conosco</a>
+                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal menu-link">
+
+                        <!-- Modal content -->
+                        <div class="modal-content menu-link">
+                            <span class="close">&times;</span>
+                            <form action="mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                                <p>Nome:</p><br />
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                                <p>E-mail:</p><br />
+                                <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                                <p>Assunto:</p><br />
+                                <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                                <p>Mensagem:</p> <br>
+                                <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                                <input type="submit" /><br />
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <script src="js/modal.js"></script>
+
+                <li><a href="pagprof.html" class="menu-link">Nossos Professores</a></li>
+                <li><a href="https://nsa.cps.sp.gov.br/" target="_blank" class="menu-link">NSA</a></li>
+                <li><a href="login/index.php" class="menu-link">Login</a></li>
+            </ul>
+            
+        </nav><!--Fim do Menu-->
+        
+    </header><!--Fim do Cabeçalho-->
 <main>
-    <section class="parallax-ds">
+    <section class="parallax-adm">
         <h1>Administração (EaD - On-line)</h1>
-        <p>Full Stack,Apps & Banco de dados</p>
-        <p>Curso Técnico</p>
+        <p>Contabilidade, Gerenciamento empresarial e outros</p>
+        <p>Curso Técnico à distância</p>
     </section>
     
     <div class="cursos">
         <section class="sobre">
-            <h2 id="curso">O Curso</h2>
-            <p>Eixo Tecnológico: Gestão e negócios.</p>
-            <br>
-            <p>Mercado de trabalho: Instituições públicas, privadas e do terceiro setor.<p>
-            
-            <br>
+            <h2 id="titleh">O Curso</h2>
+            <p class="text-curso">
+                <b>O TÉCNICO EM ADMINISTRAÇÃO</b> é o profissional que participa da gestão dos recursos 
+                mercadológicos, humanos, financeiros, materiais e produtivos. Executa as rotinas 
+                administrativas, controla materiais, acompanha níveis de eficiência e produtividade, 
+                presta atendimento a clientes, e elabora fluxo de caixa. Trabalha em equipe, otimiza recursos, 
+                propõe inovações e adota postura ética na condução das relações e atividades.
+            </p>
+            <p class="text-curso"><b>Eixo Tecnológico: </b> Gestão e negócios</p>
         </section>
 
         <section class="habilidades">
-            <h2 id="curso">Você será capaz de:</h2>
-            <p>O TÉCNICO EM ADMINISTRAÇÃO é o profissional que controla a rotina administrativa 
-                das empresas. Colabora nos planejamentos estratégico, tático e operacional. 
-                Realiza atividades em recursos humanos e intermedeia mão-de-obra para colocação 
-                e recolocação. Atua na área de compras, auxilia no setor contábil e assessora a 
-                área de vendas. Intercambia mercadorias e serviços e executa atividades nas áreas 
-                fiscal e financeira.<p>
+            <h2 id="titleh">Você será capaz de:</h2>
+            
+            <p class="text-capaz"> • Gerenciar folhas de pagamento;</p>
+            <p class="text-capaz"> • Recrutar e selecionar candidatos;</p>
+            <p class="text-capaz"> • Avaliar desempenho da empresa;</p>
+            <p class="text-capaz"> • Gerenciar processos;</p>
+            <p class="text-capaz"> • Efetuar o planejamento estratégico;</p>
         </section>
     </div>
-
+  
 </div>
-        <div id="informacoes">
-            <section class="competencias">
-                <h2>Matriz Curricular</h2>
-                <h3>-1600 horas/aula</h3>
-                <details class="infos">
-                    <summary>1º Ano <img src="imagens/seta.png" class="icone"></summary>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação Mobile
-                            </span>
-                        </button>
+<div id="informacoes">
+    <section class="competencias">
+        <h2>Matriz Curricular</h2>
+        <h3>-1600 horas/aula</h3>
+        <details class="infos">
+            <summary>1º Ano</summary>
+            <div class="grade">
+                <button  onclick="acao()" class="btn">
+                    <span class="grade-span">
+                        Programação Mobile
+                    </span>
+                </button>
+                    <div class="modal-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                
                     </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Banco de Dados
-                            </span>
-                        </button>
+                <button  onclick="acao2()" class="btn2">
+                    <span class="grade-span">
+                        Programação web
+                    </span>
+                </button>
+                    <div class="modal-info2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar2()" class="fechar"><img src="imagens/x.png" alt=""></div>
                     </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação de Algoritimos
-                            </span>
-                        </button>
+                <button  onclick="acao3()" class="btn3">
+                    <span class="grade-span">
+                        FUNDAMENTOS da Informática
+                    </span>
+                </button>
+                    <div class="modal-info3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar3()" class="fechar"><img src="imagens/x.png" alt=""></div>
                     </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Análise e Projeto de Sistemas
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                FUNDAMENTOS DA Informática
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                DESIGN DIGITAL
-                            </span>
-                        </button>
-                    </div>
-                </details>
-                <details>
-                    <summary>2º Ano <img src="imagens/seta.png" class="icone"></summary>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação Mobile
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Banco de Dados
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Programação de Algoritimos
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                Análise e Projeto de Sistemas
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                FUNDAMENTOS DA Informática
-                            </span>
-                        </button>
-                    </div>
-                    <div class="grade">
-                        <button class="btn">
-                            <span class="grade-span">
-                                DESIGN DIGITAL
-                            </span>
-                        </button>
-                    </div>
-                </details>
-            </section>
-        </div>
-</main>
 
+                <button  onclick="acao4()" class="btn4">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar4()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                    </div>
+
+                <button  onclick="acao5()" class="btn5">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                     <div onclick="fechar5()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                    </div>
+
+                <button  onclick="acao4()" class="btn4">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar4()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                    </div>                    
+              </div>
+            </details>
+            <details>
+                <summary>2º Ano</summary>
+                <div class="grade">
+                    <button  onclick="acao7()" class="btn7">
+                        <span class="grade-span">
+                            APS
+                        </span>
+                    </button>
+                        <div class="modal-info7">
+                            <p>7</p>
+                            <div onclick="fechar7()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                        </div>
+                    <button  onclick="acao8()" class="btn8">
+                        <span class="grade-span">
+                            APS
+                        </span>
+                    </button>
+                        <div class="modal-info8">
+                            <p>8</p>
+                            <div onclick="fechar8()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                        </div>
+                        <button  onclick="acao9()" class="btn9">
+                            <span class="grade-span">
+                                APS
+                            </span>
+                        </button>
+                            <div class="modal-info9">
+                                <p>9</p>
+                                <div onclick="fechar9()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                            </div>
+                            <button  onclick="acao10()" class="btn10">
+                                <span class="grade-span">
+                                    APS
+                                </span>
+                            </button>
+                                <div class="modal-info10">
+                                    <p>10</p>
+                                    <div onclick="fechar10()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                                </div>
+                                <button  onclick="acao11()" class="btn11">
+                                    <span class="grade-span">
+                                        APS
+                                    </span>
+                                </button>
+                                    <div class="modal-info11">
+                                        <p>11</p>
+                                        <div onclick="fechar11()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                                    </div>
+                                    <button  onclick="acao12()" class="btn12">
+                                        <span class="grade-span">
+                                            APS
+                                        </span>
+                                    </button>
+                                        <div class="modal-info12">
+                                            <p>12</p>
+                                            <div onclick="fechar12()" class="fechar"><img src="imagens/x.png" alt=""></div>
+                                        </div>
+                
+            </details>
+            </div>
+        
+        
+    </section>
+</div>
+</main>
 
 <section id="rodape-info">
     <img src="imagens/logorodape.png" class="logo-rodape" style="width: 90px; height: 90px;">
@@ -272,25 +288,27 @@
 </section>
 <section class="redes">
     <ul class="redes">
-        <a href="https://www.facebook.com/etecdevilaformosaevf/">
-    <li><i class="fab fa-facebook-f"></i></li></a>
-        <a href="https://twitter.com/etecvf">
-    <li><i class="fab fa-twitter"></i></li></a>
-        <a href="https://www.instagram.com/etec_vilaformosa/">   
-    <li><i class="fab fa-instagram"></i></li></a>
-        <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q">  
-    <li><i class="fab fa-youtube"></i></li><a>
-</ul>
+        <ul class="redes">
+            <a href="https://www.facebook.com/etecdevilaformosaevf/">
+                <li><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="https://twitter.com/etecvf">
+                <li><i class="fab fa-twitter"></i></li></a>
+                    <a href="https://www.instagram.com/etec_vilaformosa/">   
+                <li><i class="fab fa-instagram"></i></li></a>
+                    <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q">  
+                <li><i class="fab fa-youtube"></i></li><a>
+     </ul>
 </section>
 </section>
 <address style="clear: both;">
-<hr class="rodape"> 
+<hr class="rodape">
 <p>Desenvolvido por EVF 2022</p>
 </address>
 
 <script src="js/menu.js"></script>
 <script src="js/carousel.js"></script>
-
+<script src="js/modal.js"></script>
+<script src="js/script.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
