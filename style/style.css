@@ -15,25 +15,12 @@ body {
     padding: 0;
 }
 
-:root {
-    --cor1: #344E5C;
-    --cor2: #608FA8;
-    --cor3: #667075;
-    --cor4: #92A1A8;
-    --cor5: #8CD0F5;
-    --cor6: #AD060E;
-
-    --fonte_principal: inherit;
-    --font_titulo: inherit;
-    --fonte_titulo2: inherit;
-}
-
 .modal {
     display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 1000;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -433,93 +420,6 @@ address p {
 }
 
 /*Fim do rodapé*/
-
-/*inicio da fomatacao pagina professores*/
-
-#menu-prof ul li p {
-    color: black;
-    font-size: 25px;
-    margin-top: 25px;
-    border: 0.2px solid black;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    border-radius: 8px;
-    
-}
-
-
-#menu-prof ul {
-    list-style-type: none;
-    width: 502px;
-    height: 990px;
-    background: #e4a803 no-repeat left bottom;
-    position: fixed;
-    text-align: center;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    border: 2px solid black;
-}
-
-#menu-prof ul li a {
-    text-decoration: none;
-    color: #e4a803;
-    background-color: black;
-    font-size: 25px;
-    margin-top: 43px;
-    text-decoration: none;
-    display: block;
-    padding: 0.3em;
-    margin-bottom: 3px;
-    border: 1px solid black;
-    border-radius: 20px;
-
-}
-
-#menu-prof ul li a:hover {
-     transform: scale(0.875);
-     transform-origin: center;
-     transition: transform 200ms ease-in;
-     transition-delay: 50ms;
-     
-}
-#menu-prof ul h2 {
-    font-size: 38px;
-    color: white;
-    ;
-}
-
-#container-conteudo-prof {
-    margin-right: 160px;
-    margin-top: 20px;
-    width: 858px;
-    height: 950px;
-    float: right;
-    background-color: whitesmoke;
-    border: 1px solid black;
-
-
-}
-
-.subtit {
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 5px;
-    font-size: 42px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.text-container {
-    font-size: 32px;
-    margin-top: 55px;
-    margin-left: 25px;
-}
-
-.text-rel {
-    font-size: 18px;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-
-/*Fim da formatacao da area professores*/
 
 /*Inicio da formatacao da area dos depoimentos*/
 #depoimentos {

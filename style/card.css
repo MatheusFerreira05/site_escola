@@ -28,7 +28,7 @@
 
 .card-image1 {
   grid-area: image;
-  background: url(../cursos/imagens/programador.jpg);
+  background: url(../imagens/cursos/programador.jpg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -36,7 +36,7 @@
 
 .card-image2 {
   grid-area: image;
-  background: url(../cursos/imagens/ma.jpg);
+  background: url(../imagens/cursos/ma.jpg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -44,7 +44,7 @@
 
 .card-image3 {
   grid-area: image;
-  background: url(../cursos/imagens/turismo.jpg);
+  background: url(../imagens/cursos/turismo.jpg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -52,7 +52,7 @@
 
 .card-image4 {
   grid-area: image;
-  background: url(../cursos/imagens/adm.jpg);
+  background: url(../imagens/cursos/adm.jpg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -60,7 +60,7 @@
 
 .card-image5 {
   grid-area: image;
-  background: url(../cursos/imagens/comercio.jpg);
+  background: url(../imagens/cursos/comercio.jpg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;

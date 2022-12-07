@@ -1,0 +1,71 @@
+
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #e4a803, #FDD16E); ;
+}
+
+#container {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+   
+}
+form {
+    margin-top: 60px;
+}
+input {
+    height: 70px;
+    width: 80%;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #CCC;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+input.usuario {
+    background-image: url('imagens/log/icone-usuario.png');
+}
+
+input.senha {
+    background-image: url('imagens/log/icone-cadeado.png');
+}
+
+button.submit {
+    color: #fff;
+    background-color: #e4a803;
+    height: 70px;
+    width: 80%;
+    font-size: 22px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button.submit:hover {
+         background-color: white;
+         color: #FDD16E;
+         border: 3px solid #FDD16E;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
