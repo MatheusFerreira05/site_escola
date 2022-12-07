@@ -94,7 +94,16 @@ p.span{
 .btn9,
 .btn10,
 .btn11,
-.btn12{
+.btn12,
+.btn13,
+.btn14,
+.btn15,
+.btn16,
+.btn17,
+.btn18,
+.btn19,
+.btn20,
+.btn21{
     background:linear-gradient(#808080,#717171) ;
     color: #ffffff;
     cursor: pointer;
@@ -125,7 +134,16 @@ p.span{
 .btn9:hover,
 .btn10:hover,
 .btn11:hover,
-.btn12:hover{
+.btn12:hover,
+.btn13:hover,
+.btn14:hover,
+.btn15:hover,
+.btn16:hover,
+.btn17:hover,
+.btn18:hover,
+.btn19:hover,
+.btn20:hover,
+.btn21:hover{
     color: #000000;
     background: linear-gradient(#e4a803,#FDD16E );
     cursor: pointer;
@@ -142,7 +160,16 @@ p.span{
 .modal-info9,
 .modal-info10,
 .modal-info11,
-.modal-info12{
+.modal-info12,
+.modal-info13,
+.modal-info14,
+.modal-info15,
+.modal-info16,
+.modal-info17,
+.modal-info18,
+.modal-info19,
+.modal-info20,
+.modal-info21{
     width: 700px;
     height: 200px;
     background-color: #ffffff;
@@ -165,7 +192,16 @@ p.span{
 .modal-info9 p,
 .modal-info10 p,
 .modal-info11 p,
-.modal-info12 p{
+.modal-info12 p,
+.modal-info13 p,
+.modal-info14 p,
+.modal-info15 p,
+.modal-info16 p,
+.modal-info17 p,
+.modal-info18 p,
+.modal-info19 p,
+.modal-info20 p,
+.modal-info21 p{
     width: 550px;
     float: left;
     padding: 20px;
@@ -182,7 +218,16 @@ p.span{
 .fechar9,
 .fechar10,
 .fechar11,
-.fechar12{
+.fechar12,
+.fechar13,
+.fechar14,
+.fechar15,
+.fechar16,
+.fechar17,
+.fechar18,
+.fechar19,
+.fechar20,
+.fechar21{
     width: 30px;
     height: 30px;
     float: right;
