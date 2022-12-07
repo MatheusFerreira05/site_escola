@@ -20,7 +20,7 @@ body {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1000;
+    z-index: 10000;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -143,49 +143,26 @@ form textarea:focus {
 
 /*fim formatação do menu*/
 
-/*Formatação conteúdo principal*/
-main {
-    background-color: #fff;
-}
 
-/* início carroussel */
-
-.fotos {
-    width: 1310px;
-}
-
-/* fim carroussel */
-
-
-/*Inicio area história*/
-
-.historia {
-    background-color: #ffffff;
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
-h1.tituloHistoria {
+/* Main Início */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+main h1 {
     font-family: 'Arvo';
-    text-align: center;
     color: #e4a803;
     margin-bottom: 30px;
-    font-size: 35px;
-    padding-top: 40px;
+    font-size: 40px!important;
+    margin-top: 40px;
 }
 
-.historia p {
+main p {
     font-family: 'Source Sans Pro';
-    margin: 15px 0px 15px 0px;
     text-align: justify;
     color: black;
     text-indent: 2px;
     font-size: 1em;
     line-height: 2em;
-    margin: 10px 0px 10px 0px;
 }
-
-/*Fim historia*/
+/* Main Fim */
 
 
 
@@ -201,6 +178,7 @@ h1.tituloHistoria {
 }
 
 .imagens-galeria {
+    margin-bottom: 50px;
     width: 950px;
     height: 700px;
     padding-top: 100px;
@@ -215,267 +193,29 @@ h1.tituloHistoria {
 
 /*Fim da Galeria*/
 
-/*Início do rodapé*/
+/*Inicio da formatacao da area dos depoimentos*/
+.depoimentos img{
+    margin-left: 45px;
+  }
+  
+  hr.depoimentos{
+    border: solid 2px #e4a803!important;
+  }
+  
+  .depoimentos p{
+      font-size: 15px;
+      font-family: 'Source Sans Pro';
+      color: #858585;
+      text-align: center;
+      font-style: italic;
+      line-height: 130%;
+  }
+  
+  .depoimentos h4{
+      font-size: 20px;
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      color: #3d3d3d;
+      text-align: center;
+  }
 
-#rodape-info {
-    width: 100%;
-    background-color: rgb(76, 76, 76);
-}
-
-#rodape-info {
-    display: flex;
-    align-items: center;
-    height: 200px;
-}
-
-#rodape-info h2 {
-    color: #fff;
-    font-family: 'Roboto', arial, sans-serif;
-    font-size: 20px;
-}
-
-#rodape-info p {
-    padding-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f4d8d8;
-    font-size: 15px;
-}
-
-#rodape-info img {
-    height: 25px;
-    width: 25px;
-    margin: 8px;
-}
-
-#rodape-info .logo-rodape {
-    display: flex;
-    justify-content: center;
-    min-height: 10vh;
-    animation: animate 3s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        filter: hue-rotate(0deg);
-
-    }
-
-    100% {
-        filter: hue-rotate(05deg);
-
-    }
-}
-
-#rodape-info h3 {
-    color: #344E5C;
-    padding: 0px 20px;
-}
-
-.secretaria,
-.biblioteca,
-.endereco,
-.redes {
-    padding-left: 120px;
-}
-
-.biblioteca h3 {
-    text-align: center;
-}
-
-hr#rodape {
-    border-color: #FDD16E;
-}
-
-.endereco {
-    width: 150px;
-    height: 120px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.redes ul {
-    display: flex;
-    text-align: center;
-}
-
-.redes ul li {
-    position: relative;
-    display: block;
-    color: #666;
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
-    background: #2A2A2A;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.redes ul li:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: inherit;
-    /* background: #d35400; */
-    border-radius: 50%;
-    transform: scale(.9);
-    z-index: -1;
-    transition: .5s;
-}
-
-.redes ul li:nth-child(1):before {
-    background: #e4a803;
-}
-
-.redes ul li:nth-child(2):before {
-    background: #e4a803;
-}
-
-.redes ul li:nth-child(3):before {
-    background: #e4a803;
-}
-
-.redes ul li:nth-child(4):before {
-    background: #e4a803;
-}
-
-.redes ul li:nth-child(5):before {
-    background: #e4a803;
-}
-
-.redes ul li:hover:before {
-    filter: blur(3px);
-    transform: scale(1.2);
-    /* box-shadow: 0 0 15px #d35400; */
-}
-
-.redes ul li:nth-child(1):hover:before {
-    box-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(2):hover:before {
-    box-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(3):hover:before {
-    box-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(4):hover:before {
-    box-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(5):hover:before {
-    box-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(1):hover {
-    color: #e4a803;
-    box-shadow: 0 0 15px #e4a803;
-    text-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(2):hover {
-    color: #e4a803;
-    box-shadow: 0 0 15px #e4a803;
-    text-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(3):hover {
-    color: #e4a803;
-    box-shadow: 0 0 15px #e4a803;
-    text-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(4):hover {
-    color: #e4a803;
-    box-shadow: 0 0 15px #e4a803;
-    text-shadow: 0 0 15px #e4a803;
-}
-
-.redes ul li:nth-child(5):hover {
-    color: #e4a803;
-    box-shadow: 0 0 15px #e4a803;
-    text-shadow: 0 0 15px #e4a803;
-}
-
-address {
-    height: 50px;
-    text-align: center;
-    background-color: rgb(42, 42, 42);
-}
-
-address p {
-    padding-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
-}
-
-/*Fim do rodapé*/
-
-/*Inicio da format da area dos depoimentos*/
-#depoimentos {
-    background-color: #ffffff;
-    width: auto;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.img-dep {
-    border-radius: 50%;
-    width: 220px;
-    padding: 25px;
-    padding-left: 18px;
-}
-
-.container-dep {
-    width: 250px;
-    height: 320px;
-    margin: auto;
-    font-family: arial;
-    float: left;
-    background-color: #ffffff;
-    margin: 25px;
-    align-items: center;
-}
-
-.text-dep {
-    font-family: 'Source Sans Pro';
-    color: #858585;
-    font-size: 15px;
-    text-align: center;
-    line-height: 130%;
-    width: 250px;
-}
-
-p.depoimentos{
-    font-size: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: #3d3d3d;
-    text-align: center;
-}
-
-#titulo-dep {
-    color: #e4a803;
-    padding-top: 50px;
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Arvo';
-    background-color: #ffffff;
-}
-
-hr.depoimentos {
-    border-color: #FDD16E;
-}
-
-/*Fim da format da area dos depoimentos*/
+/*Fim da formatacao da area dos depoimentos*/

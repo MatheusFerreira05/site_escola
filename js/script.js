@@ -1,4 +1,4 @@
-function () {
+function acao() {
     
     let modal = document.querySelector('.modal-info')
 
@@ -11,7 +11,7 @@ function fechar() {
     modal.style.display = 'none';
 }
 
-function 2() {
+function acao2() {
     
     let modal = document.querySelector('.modal-info2')
 
@@ -24,7 +24,7 @@ function fechar2() {
     modal.style.display = 'none';
 }
 
-function 3() {
+function acao3() {
     
     let modal = document.querySelector('.modal-info3')
 
@@ -37,7 +37,7 @@ function fechar3() {
     modal.style.display = 'none';
 }
 
-function 4() {
+function acao4() {
     
     let modal = document.querySelector('.modal-info4')
 
@@ -50,7 +50,7 @@ function fechar4() {
     modal.style.display = 'none';
 }
 
-function 5() {
+function acao5() {
     
     let modal = document.querySelector('.modal-info5')
 
@@ -63,7 +63,7 @@ function fechar5() {
     modal.style.display = 'none';
 }
 
-function 6() {
+function acao6() {
     
     let modal = document.querySelector('.modal-info6')
 
@@ -76,7 +76,7 @@ function fechar6() {
     modal.style.display = 'none';
 }
 
-function 7() {
+function acao7() {
     
     let modal = document.querySelector('.modal-info7')
 
@@ -89,7 +89,7 @@ function fechar7() {
     modal.style.display = 'none';
 }
 
-function 8() {
+function acao8() {
     
     let modal = document.querySelector('.modal-info8')
 
@@ -102,7 +102,7 @@ function fechar8() {
     modal.style.display = 'none';
 }
 
-function 9() {
+function acao9() {
     
     let modal = document.querySelector('.modal-info9')
 
@@ -115,7 +115,7 @@ function fechar9() {
     modal.style.display = 'none';
 }
 
-function 10() {
+function acao10() {
     
     let modal = document.querySelector('.modal-info10')
 
@@ -128,7 +128,7 @@ function fechar10() {
     modal.style.display = 'none';
 }
 
-function 11() {
+function acao11() {
     
     let modal = document.querySelector('.modal-info11')
 
@@ -141,7 +141,7 @@ function fechar11() {
     modal.style.display = 'none';
 }
 
-function 12() {
+function acao12() {
     
     let modal = document.querySelector('.modal-info12')
 
@@ -150,123 +150,6 @@ function 12() {
 
 function fechar12() {
     let modal = document.querySelector('.modal-info12')
-
-    modal.style.display = 'none';
-}
-
-function 13() {
-    
-    let modal = document.querySelector('.modal-info13')
-
-    modal.style.display = 'block';
-}
-
-function fechar13() {
-    let modal = document.querySelector('.modal-info13')
-
-    modal.style.display = 'none';
-}
-
-function 14() {
-    
-    let modal = document.querySelector('.modal-info14')
-
-    modal.style.display = 'block';
-}
-
-function fechar14() {
-    let modal = document.querySelector('.modal-info14')
-
-    modal.style.display = 'none';
-}
-
-function 15() {
-    
-    let modal = document.querySelector('.modal-info15')
-
-    modal.style.display = 'block';
-}
-
-function fechar15() {
-    let modal = document.querySelector('.modal-info15')
-
-    modal.style.display = 'none';
-}
-
-function 16() {
-    
-    let modal = document.querySelector('.modal-info16')
-
-    modal.style.display = 'block';
-}
-
-function fechar16() {
-    let modal = document.querySelector('.modal-info16')
-
-    modal.style.display = 'none';
-}
-
-function 17() {
-    
-    let modal = document.querySelector('.modal-info17')
-
-    modal.style.display = 'block';
-}
-
-function fechar17() {
-    let modal = document.querySelector('.modal-info17')
-
-    modal.style.display = 'none';
-}
-
-function 18() {
-    
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'block';
-}
-
-function fechar18() {
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'none';
-}
-
-function 19() {
-    
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'block';
-}
-
-function fechar19() {
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'none';
-}
-
-function 20() {
-    
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'block';
-}
-
-function fechar20() {
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'none';
-}
-
-function 21() {
-    
-    let modal = document.querySelector('.modal-info18')
-
-    modal.style.display = 'block';
-}
-
-function fechar21() {
-    let modal = document.querySelector('.modal-info18')
 
     modal.style.display = 'none';
 }
